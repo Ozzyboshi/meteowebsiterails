@@ -4,6 +4,17 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'static_pages#home'
+  get 'js/home' => 'static_pages#homejs'
+  get 'jqwidgets/jqxtabs' => 'static_pages#jqxtabsjs'
+  get 'jqwidgets/jqxgauge' => 'static_pages#jqxgaugejs'
+  get 'jqwidgets/jqxchart' => 'static_pages#jqxchartjs'
+  get 'jqwidgets/jqxexpander' => 'static_pages#jqxexpanderjs'
+  get 'jqwidgets/jqxdata' => 'static_pages#jqxdatajs'
+  get 'jqwidgets/jqxcore' => 'static_pages#jqxcorejs'
+  get 'scripts/gettheme' => 'static_pages#getthemejs'
+  get 'js/bootstrap.min.js' => 'static_pages#boot'
+  get 'css/bootstrap.min.css' => 'static_pages#bootcss'
+  get 'css/custom.css' => 'static_pages#customcss'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
