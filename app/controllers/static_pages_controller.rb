@@ -3,10 +3,18 @@ class StaticPagesController < ApplicationController
 	def home
 		render :home,:layout => false
 	end
+	
+	def tempmaxmin
+		render :tempmaxmin,:layout => false
+	end
+	
 	def homejs
 		respond_to do |format|
 			format.js { render 'home.js.erb' }
 		end
+	end
+	def tempmaxminjs
+		render 'tempmaxmin.js.erb' 
 	end
 	
 	def jqxtabsjs

@@ -3,10 +3,18 @@ class StaticPagesController < ApplicationController
 	def home
 		render :home,:layout => false
 	end
+	
+	def tempmaxmin
+		render :tempmaxmin,:layout => false
+	end
+	
 	def homejs
 		respond_to do |format|
 			format.js { render 'home.js.erb' }
 		end
+	end
+	def tempmaxminjs
+		render 'tempmaxminjs.js.erb' 
 	end
 	
 	def jqxtabsjs
@@ -50,7 +58,7 @@ class StaticPagesController < ApplicationController
 	end
 	
 	def bootcss
-		render 'js/bootstrap.min.css.erb'
+		render 'css/bootstrap.min.css.erb'
 	end
 	
 	def getthemejs
@@ -58,6 +66,10 @@ class StaticPagesController < ApplicationController
 			format.js { render 'scripts/gettheme.js.erb' }
 		end
 	end
+	
+	def customcss
+		render 'css/custom.css.erb'
+	end 
 	
 	
 	

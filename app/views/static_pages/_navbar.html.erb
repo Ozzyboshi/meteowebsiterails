@@ -12,8 +12,12 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>       
-            <li><a href="#about">About</a></li>
+            <% if locals[:page] == "home.html" %> <li class="active"> <% else %> <li> <% end %>
+            <a href="/">Home</a></li>
+       
+            <% if locals[:page] == "tempmaxmin.html" %> <li class="active"> <% else %> <li> <% end %>
+            <a href="tempmaxmin.html">Massime e minime odierne</a></li>
+
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dati centralina <b class="caret"></b></a>
               <ul class="dropdown-menu">

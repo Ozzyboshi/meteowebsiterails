@@ -4,7 +4,9 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'static_pages#home'
+  get 'tempmaxmin' => 'static_pages#tempmaxmin'
   get 'js/home' => 'static_pages#homejs'
+  get '/js/tempmaxmin.js'  => 'static_pages#tempmaxminjs'
   get 'jqwidgets/jqxtabs' => 'static_pages#jqxtabsjs'
   get 'jqwidgets/jqxgauge' => 'static_pages#jqxgaugejs'
   get 'jqwidgets/jqxchart' => 'static_pages#jqxchartjs'
