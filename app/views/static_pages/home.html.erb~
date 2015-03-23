@@ -15,7 +15,7 @@
     
     <div class="container animsition">
 
-    	<h3>ULTIMO AGGIORNAMENTO : <quote id=data></quote></h3>
+			<h3>ULTIMO AGGIORNAMENTO : <quote id=data></quote></h3>
 		
 		<div class="row">
 			<!-- Inizio temperatura esterna -->
