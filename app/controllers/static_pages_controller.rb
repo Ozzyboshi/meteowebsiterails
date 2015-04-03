@@ -8,6 +8,10 @@ class StaticPagesController < ApplicationController
 		render :tempmaxmin,:layout => false
 	end
 	
+	def last24hr
+		render :last24hr,:layout => false
+	end
+	
 	def homejs
 		respond_to do |format|
 			format.js { render 'home.js.erb' }
@@ -15,6 +19,9 @@ class StaticPagesController < ApplicationController
 	end
 	def tempmaxminjs
 		render 'tempmaxmin.js.erb' 
+	end
+	def last24hrjs
+		render 'last24hr.js.erb' 
 	end
 	
 	def jqxtabsjs
@@ -50,6 +57,11 @@ class StaticPagesController < ApplicationController
 	def jqxcorejs
 		respond_to do |format|
 			format.js { render 'jqwidgets/jqxcore.js.erb' }
+		end
+	end
+	def jqxdatatable
+		respond_to do |format|
+			format.js { render 'jqwidgets/jqxdatatable.js.erb' }
 		end
 	end
 	
