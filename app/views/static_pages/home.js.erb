@@ -1,4 +1,11 @@
 $(document).ready(function () {
+
+	// Inizio funzione per swatch beat time
+	Date.prototype.getSwatch = function() {
+		var swatch = ((this.getUTCHours() + 1)%24) + this.getUTCMinutes()/60 + this.getUTCSeconds()/3600;
+		return Math.floor(swatch*1000/24);
+	}
+
 	handleRefresh("http://meteo.ozzyboshi.com:8888/WeatherStation/MeteoServices/Readings/lastReading/updateMeteo");
 	setInterval(function () {handleRefresh("http://meteo.ozzyboshi.com:8888/WeatherStation/MeteoServices/Readings/lastReading/updateMeteo")}, 30000);
 	
@@ -54,6 +61,7 @@ function updateMeteo(sales) {
 	var date = new Date(String(sales[0].data).replace(" ","T")+"Z");
 	
 	$("#data").text(date.toString());
+	$("#dataswatch").text("Swatch internet beat time : @"+date.getSwatch()+" .beats");
 	$("#tempesterna").text(sales[0].temperatura_esterna*1+" °");
 	$("#tempinterna").text(sales[0].temperatura_interna*1+" °");
 	$("#umiesterna").text(sales[0].umidita_esterna*1+"%");

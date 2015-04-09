@@ -26,42 +26,42 @@ class StaticPagesController < ApplicationController
 	
 	def jqxtabsjs
 		respond_to do |format|
-			format.js { render 'jqwidgets/jqxtabs.js.erb' }
+			format.js { render 'jqwidgets/jqxtabs.js' }
 		end
 	end
 	
 	def jqxgaugejs
 		respond_to do |format|
-			format.js { render 'jqwidgets/jqxgauge.js.erb' }
+			format.js { render 'jqwidgets/jqxgauge.js' }
 		end
 	end
 	
 	def jqxchartjs
 		respond_to do |format|
-			format.js { render 'jqwidgets/jqxchart.js.erb' }
+			format.js { render 'jqwidgets/jqxchart.js' }
 		end
 	end
 	
 	def jqxexpanderjs
 		respond_to do |format|
-			format.js { render 'jqwidgets/jqxexpander.js.erb' }
+			format.js { render 'jqwidgets/jqxexpander.js' }
 		end
 	end
 	
 	def jqxdatajs
 		respond_to do |format|
-			format.js { render 'jqwidgets/jqxdata.js.erb' }
+			format.js { render 'jqwidgets/jqxdata.js' }
 		end
 	end
 	
 	def jqxcorejs
 		respond_to do |format|
-			format.js { render 'jqwidgets/jqxcore.js.erb' }
+			format.js { render 'jqwidgets/jqxcore.js' }
 		end
 	end
 	def jqxdatatable
 		respond_to do |format|
-			format.js { render 'jqwidgets/jqxdatatable.js.erb' }
+			format.js { render 'jqwidgets/jqxdatatable.js' }
 		end
 	end
 	
