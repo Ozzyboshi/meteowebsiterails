@@ -13,11 +13,13 @@
 	</head>
 	<body>
 		<%= render 'navbar', :locals => {:page => 'last24hr.html'} %>
-		<div class="container">
+		<div class="container animsition">
 			<div class="row">
-				<!-- Inizio temperatura massima -->
+				<!-- Inizio temperatura 24hr -->
 				<div class="col-sm-12">
 					<div id="gauge" ></div>
+					<br>
+					<input type=button id=refresh value="Aggiorna grafico">
 				</div>
 			</div>
 		</div>

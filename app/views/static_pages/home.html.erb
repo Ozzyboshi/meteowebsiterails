@@ -1,92 +1,92 @@
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Centralina meteo ozzyboshi.com">
-    <meta name="author" content="Alessio Garzi">
-    <title>Centralina meteo Ozzyboshi</title>
-    
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.4.3/css/animsition.min.css">
-
-</head>
-    <%= render 'navbar', :locals => {:page => 'home.html'} %>
-    
-    <div class="container animsition">
-
-    	<h4>ULTIMO AGGIORNAMENTO : <quote id=data></quote><br><br><quote id=dataswatch></quote></h4>
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Centralina meteo ozzyboshi.com">
+		<meta name="author" content="Alessio Garzi">
+		<title>Centralina meteo Ozzyboshi</title>
 		
-		<div class="row">
-			<!-- Inizio temperatura esterna -->
-			<div class="col-sm-3">
-				<h3>Temperatura esterna</h3>
-				<div id="termometroesterno" class=termometro></div><br>
-				<p class=termometrodesc><h4><span id=tempesterna /></h4></p>
-			</div>
-			
-			<!-- Inizio temperatura interna -->
-			<div class="col-sm-3">
-				<h3>Temperatura interna</h3>
-				<div id="termometrointerno" class=termometro></div><br>
-				<p class=termometrodesc><h4><span id=tempinterna /></h4></p>
-			</div>
-			
-			<!-- Inizio umidita esterna -->
-			<div class="col-sm-3">
-				<h3>Umidita esterna</h3>
-				<div id="gaugeumiditaesterna" class=gauge></div><br>
-				<p class=termometrodesc><h4><span id=umiesterna /></h4></p>
-			</div>
-			
-			<!-- Inizio umidita interna -->
-			<div class="col-sm-3">
-				<h3>Umidita interna</h3>
-				<div id="gaugeumiditainterna" class=gauge></div><br>
-				<p class=termometrodesc><h4><span id=umiinterna /></h4></p>
-			</div>
-		</div>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/custom.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.4.3/css/animsition.min.css">
 
-		<div class="row">
-			<!-- Inizio pressione -->
-			<div class="col-sm-4">
-				<h3>Pressione</h3>
-				<div id="gaugepressione" class=gauge></div><br>
-				<p class=termometrodesc><h4><span id=pressione /></h4></p>
+	</head>
+	<body>
+		<%= render 'navbar', :locals => {:page => 'home.html'} %>
+		<div class="container animsition">
+
+			<h4>ULTIMO AGGIORNAMENTO : <quote id=data></quote><br><br><quote id=dataswatch></quote></h4>
+		
+			<div class="row">
+				<!-- Inizio temperatura esterna -->
+				<div class="col-sm-3">
+					<h3>Temperatura esterna</h3>
+					<div id="termometroesterno" class=termometro></div><br>
+					<p class=termometrodesc><h4><span id=tempesterna></span></h4>
+				</div>
+			
+				<!-- Inizio temperatura interna -->
+				<div class="col-sm-3">
+					<h3>Temperatura interna</h3>
+					<div id="termometrointerno" class=termometro></div><br>
+					<p class=termometrodesc><h4><span id=tempinterna></span></h4>
+				</div>
+			
+				<!-- Inizio umidita esterna -->
+				<div class="col-sm-3">
+					<h3>Umidita esterna</h3>
+					<div id="gaugeumiditaesterna" class=gauge></div><br>
+					<p class=termometrodesc><h4><span id=umiesterna><span></h4>
+				</div>
+			
+				<!-- Inizio umidita interna -->
+				<div class="col-sm-3">
+					<h3>Umidita interna</h3>
+					<div id="gaugeumiditainterna" class=gauge></div><br>
+					<p class=termometrodesc><h4><span id=umiinterna></span></h4>
+				</div>
 			</div>
-			<!-- Inizio vento -->
-			<div class="col-sm-4">
-				<h3>Vento</h3>
-				<div id="gaugevento" class=gauge></div><br>
-				<p class=termometrodesc><h4>Vento Medio : <span id=ventomedio /></h4>
-				<p class=termometrodesc><h4>Vento Raffica : <span id=ventoraffica></span></h4></p>
+
+			<div class="row">
+				<!-- Inizio pressione -->
+				<div class="col-sm-4">
+					<h3>Pressione</h3>
+					<div id="gaugepressione" class=gauge></div><br>
+					<p class=termometrodesc><h4><span id=pressione></span></h4>
+				</div>
+			
+				<!-- Inizio vento -->
+				<div class="col-sm-4">
+					<h3>Vento</h3>
+					<div id="gaugevento" class=gauge></div><br>
+					<p class=termometrodesc><h4>Vento Medio : <span id=ventomedio></span></h4>
+					<p class=termometrodesc><h4>Vento Raffica : <span id=ventoraffica></span></h4>
+				</div>
+			
+				<!-- Inizio pioggia -->
+				<div class="col-sm-4">
+					<h3>Pioggia</h3>
+					<div id="termometropioggia" class=termometro></div><br>
+					<p class=termometrodesc><h4>Pioggia di oggi : <span id=pioggiamezzanotte></span></h4>
+				</div>
 			</div>
-			<!-- Inizio pioggia -->
-			<div class="col-sm-4">
-				<h3>Pioggia</h3>
-				<div id="termometropioggia" class=termometro></div><br>
-				<p class=termometrodesc><h4>Pioggia di oggi : <span id=pioggiamezzanotte /></h4></p>
-			</div>
-		</div>
-	</div>	
+		</div>	
 	
-	<%= render "footer" %>
+		<%= render "footer" %>
 
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    
-     <script src="scripts/gettheme.js"></script>
-    <script src="jqwidgets/jqxcore.js"></script>
-    <script src="jqwidgets/jqxdata.js"></script>
-    <script src="jqwidgets/jqxexpander.js"></script>
-    <script src="jqwidgets/jqxchart.js"></script>
-    <script src="jqwidgets/jqxgauge.js"></script>
-    <script src="jqwidgets/jqxtabs.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+		<script src="scripts/gettheme.js"></script>
+		<script src="jqwidgets/jqxcore.js"></script>
+		<script src="jqwidgets/jqxdata.js"></script>
+		<script src="jqwidgets/jqxexpander.js"></script>
+		<script src="jqwidgets/jqxchart.js"></script>
+		<script src="jqwidgets/jqxgauge.js"></script>
+		<script src="jqwidgets/jqxtabs.js"></script>
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.4.3/js/jquery.animsition.min.js"></script>
-
-    
-    <script src="./js/home.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.4.3/js/jquery.animsition.min.js"></script>
+		<script src="./js/home.js"></script>
+    </body>
+</html>

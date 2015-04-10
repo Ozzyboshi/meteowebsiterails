@@ -16,15 +16,12 @@ function handleRefresh1()
 	}
 }
 
-var last=0.0;
-var lastmin=0.0;
-var lastmax=0.0;
-var chart_vento_medio;
-function updateMeteo(sales) {
+/*function updateMeteo(sales) {
 
-}
+}*/
 
-function updateMeteoReadings(sales) {
+function updateMeteoReadings(sales) 
+{
 	//var array1 = new Array();
 	var array = new Array();
 	var arrayumidita = new Array();
@@ -36,31 +33,61 @@ function updateMeteoReadings(sales) {
 	//chartvento.series[0].setData([]);
 	//chartpressione.series[0].setData([]);
 
-		for (var i=0;i<sales.length;i++)
-		{
-			var anno=sales[i].data.substring(0,4);
-			var mese=sales[i].data.substring(5,7);
-			var giorno=sales[i].data.substring(8,10);
-			var ora=sales[i].data.substring(11,13);
-			var minuti=sales[i].data.substring(14,16);
+	var date;
+	var newDate;
+	
+
+	for (var i=0;i<sales.length;i++)
+	{
+		/*var anno=sales[i].data.substring(0,4);
+		var mese=sales[i].data.substring(5,7);
+		var giorno=sales[i].data.substring(8,10);
+		var ora=sales[i].data.substring(11,13);
+		var minuti=sales[i].data.substring(14,16);*/
+		
+		
+		date = new Date(String(sales[i].data).replace(" ","T")+"Z");
+		array[i]=[date.getTime()+(date.getTimezoneOffset()*-1)*60*1000,eval(sales[i].temperatura_esterna)];
 			
-			array[i]=[Date.UTC(anno,mese-1,giorno,ora,minuti),eval(sales[i].temperatura_esterna)];
-			//arrayumidita[i]=[Date.UTC(anno,mese-1,giorno,ora,minuti),eval(sales[i].umidita_esterna)];
-			//arrayvento[i]=[Date.UTC(anno,mese-1,giorno,ora,minuti),eval(sales[i].vento_medio)];
-			//arraypressione[i]=[Date.UTC(anno,mese-1,giorno,ora,minuti),eval(sales[i].pressione)];
-		}
-		chart.series[0].setData(array,true);
-		//chartumidita.series[0].setData(arrayumidita,true);
-		//chartvento.series[0].setData(arrayvento,true);
-		//chartpressione.series[0].setData(arraypressione,true);
+		//array[i]=[Date.UTC(anno,mese-1,giorno,ora,minuti),eval(sales[i].temperatura_esterna)];
+		//arrayumidita[i]=[Date.UTC(anno,mese-1,giorno,ora,minuti),eval(sales[i].umidita_esterna)];
+		//arrayvento[i]=[Date.UTC(anno,mese-1,giorno,ora,minuti),eval(sales[i].vento_medio)];
+		//arraypressione[i]=[Date.UTC(anno,mese-1,giorno,ora,minuti),eval(sales[i].pressione)];
 	}
+	chart.series[0].setData(array,true);
+	//chartumidita.series[0].setData(arrayumidita,true);
+	//chartvento.series[0].setData(arrayvento,true);
+	//chartpressione.series[0].setData(arraypressione,true);
+}
 
 	
         $(document).ready(function () {
         
+        $(".animsition").animsition({
+  
+    inClass               :   'fade-in',
+    outClass              :   'fade-out',
+    inDuration            :    1500,
+    outDuration           :    800,
+    linkElement           :   '.animsition-link',
+    // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+    loading               :    true,
+    loadingParentElement  :   'body', //animsition wrapper element
+    loadingClass          :   'animsition-loading',
+    unSupportCss          : [ 'animation-duration',
+                              '-webkit-animation-duration',
+                              '-o-animation-duration'
+                            ],
+    
+    overlay               :   false,
+    
+    overlayClass          :   'animsition-overlay-slide',
+    overlayParentElement  :   'body'
+  });
+        
 		//updateLinks();
 		handleRefresh1();
-		setInterval(function () {handleRefresh1()}, 30000);
+		//setInterval(function () {handleRefresh1()}, 30000);
 
 		
 
@@ -310,7 +337,13 @@ function updateMeteoReadings(sales) {
 	     }]
 	  });
 	  
-	  handleRefresh1();
-	  setInterval(handleRefresh1, 60000);
+	 // handleRefresh1();
+	  //setInterval(handleRefresh1, 60000);
 
         });
+$("#refresh").click(
+	function ()
+	{
+		location.reload();
+	}
+);

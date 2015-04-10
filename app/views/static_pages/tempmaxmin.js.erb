@@ -1,6 +1,10 @@
 $(document).ready(function () {
 
-
+	// Inizio funzione per swatch beat time
+	Date.prototype.getSwatch = function() {
+		var swatch = ((this.getUTCHours() + 1)%24) + this.getUTCMinutes()/60 + this.getUTCSeconds()/3600;
+		return Math.floor(swatch*1000/24);
+	}
 
 	print_termometro($('#termometromax'));
 	print_termometro($('#termometromin'));
@@ -57,6 +61,7 @@ function updateMeteoMax(sales) {
 	var date = new Date(String(sales[0].data).replace(" ","T")+"Z");
 	
 	$("#termometromaxdesc").text(sales[0].temperatura_esterna*1+" °"+" registrata alle "+date.toString());
+	$("#termometromaxdescswatch").text("Swatch internet beat time : @"+date.getSwatch()+" .beats");
 	$('#termometromax').jqxLinearGauge('animationDuration', 1000);
 	$('#termometromax').jqxLinearGauge('value',sales[0].temperatura_esterna*1);
 }
@@ -64,6 +69,7 @@ function updateMeteoMax(sales) {
 function updateMeteoMin(sales) {
 	var date = new Date(String(sales[0].data).replace(" ","T")+"Z");
 	$("#termometromindesc").text(sales[0].temperatura_esterna*1+" °"+" registrata alle "+date.toString());
+	$("#termometromindescswatch").text("Swatch internet beat time : @"+date.getSwatch()+" .beats");
 	$('#termometromin').jqxLinearGauge('animationDuration', 1000);
 	$('#termometromin').jqxLinearGauge('value',sales[0].temperatura_esterna*1);
 }
