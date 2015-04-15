@@ -41998,3 +41998,1061 @@ Started GET "/js/last24hr.js" for 127.0.0.1 at 2015-04-10 10:44:26 +0000
 Processing by StaticPagesController#last24hrjs as */*
   Rendered static_pages/last24hr.js.erb (0.1ms)
 Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 62.94.49.176 at 2015-04-15 17:48:10 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/_navbar.html.erb (0.8ms)
+  Rendered static_pages/_footer.html.erb (0.3ms)
+  Rendered static_pages/home.html.erb (21.7ms)
+Completed 200 OK in 67ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 62.94.49.176 at 2015-04-15 17:48:11 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (7.5ms)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 62.94.49.176 at 2015-04-15 17:48:11 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.6ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 62.94.49.176 at 2015-04-15 17:48:11 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (2.0ms)
+Completed 200 OK in 9ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 62.94.49.176 at 2015-04-15 17:48:11 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.7ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 62.94.49.176 at 2015-04-15 17:48:11 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (2.3ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 62.94.49.176 at 2015-04-15 17:48:11 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (5.4ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 62.94.49.176 at 2015-04-15 17:48:11 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (1.7ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 62.94.49.176 at 2015-04-15 17:48:11 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (10.6ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 62.94.49.176 at 2015-04-15 17:48:11 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (1.8ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 62.94.49.176 at 2015-04-15 17:48:11 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (3.8ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/home.js" for 62.94.49.176 at 2015-04-15 17:48:11 +0000
+Processing by StaticPagesController#homejs as JS
+  Rendered static_pages/home.js.erb (1.2ms)
+Completed 200 OK in 23ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 62.94.49.176 at 2015-04-15 17:48:18 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.0ms)
+  Rendered static_pages/home.html.erb (1.6ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 62.94.49.176 at 2015-04-15 17:48:18 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 62.94.49.176 at 2015-04-15 17:48:18 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 62.94.49.176 at 2015-04-15 17:48:18 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 62.94.49.176 at 2015-04-15 17:48:18 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 62.94.49.176 at 2015-04-15 17:48:18 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (0.2ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 62.94.49.176 at 2015-04-15 17:48:18 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (0.4ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 62.94.49.176 at 2015-04-15 17:48:18 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (0.1ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 62.94.49.176 at 2015-04-15 17:48:18 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (0.3ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 62.94.49.176 at 2015-04-15 17:48:18 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (0.4ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 62.94.49.176 at 2015-04-15 17:48:18 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (0.3ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/home.js" for 62.94.49.176 at 2015-04-15 17:48:18 +0000
+Processing by StaticPagesController#homejs as JS
+  Rendered static_pages/home.js.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 62.94.49.176 at 2015-04-15 17:49:54 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/home.html.erb (3.1ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 62.94.49.176 at 2015-04-15 17:49:54 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.3ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 62.94.49.176 at 2015-04-15 17:49:54 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 62.94.49.176 at 2015-04-15 17:49:55 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 62.94.49.176 at 2015-04-15 17:49:55 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 62.94.49.176 at 2015-04-15 17:49:55 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (0.2ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 62.94.49.176 at 2015-04-15 17:49:55 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (4.1ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 62.94.49.176 at 2015-04-15 17:49:55 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (0.1ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 62.94.49.176 at 2015-04-15 17:49:55 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (1.3ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 62.94.49.176 at 2015-04-15 17:49:55 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (0.2ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 62.94.49.176 at 2015-04-15 17:49:55 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (0.2ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/home.js" for 62.94.49.176 at 2015-04-15 17:49:55 +0000
+Processing by StaticPagesController#homejs as JS
+  Rendered static_pages/home.js.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 62.94.49.176 at 2015-04-15 17:51:27 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/home.html.erb (1.9ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 62.94.49.176 at 2015-04-15 17:51:27 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.7ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 62.94.49.176 at 2015-04-15 17:51:27 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 62.94.49.176 at 2015-04-15 17:51:27 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.2ms)
+Completed 200 OK in 5ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 62.94.49.176 at 2015-04-15 17:51:27 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (0.2ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 62.94.49.176 at 2015-04-15 17:51:27 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 62.94.49.176 at 2015-04-15 17:51:27 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (0.3ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 62.94.49.176 at 2015-04-15 17:51:27 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (0.3ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 62.94.49.176 at 2015-04-15 17:51:27 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (1.1ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 62.94.49.176 at 2015-04-15 17:51:27 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (0.2ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 62.94.49.176 at 2015-04-15 17:51:27 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (0.3ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/home.js" for 62.94.49.176 at 2015-04-15 17:51:27 +0000
+Processing by StaticPagesController#homejs as JS
+  Rendered static_pages/home.js.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 62.94.49.176 at 2015-04-15 17:56:54 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/home.html.erb (1.9ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 62.94.49.176 at 2015-04-15 17:56:55 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.2ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 62.94.49.176 at 2015-04-15 17:56:55 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (1.8ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 62.94.49.176 at 2015-04-15 17:56:55 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.2ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 62.94.49.176 at 2015-04-15 17:56:55 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 62.94.49.176 at 2015-04-15 17:56:55 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (0.2ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 62.94.49.176 at 2015-04-15 17:56:55 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (0.2ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 62.94.49.176 at 2015-04-15 17:56:55 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 62.94.49.176 at 2015-04-15 17:56:55 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (0.3ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 62.94.49.176 at 2015-04-15 17:56:55 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (0.1ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 62.94.49.176 at 2015-04-15 17:56:55 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (0.1ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/home.js" for 62.94.49.176 at 2015-04-15 17:56:55 +0000
+Processing by StaticPagesController#homejs as JS
+  Rendered static_pages/home.js.erb (1.9ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 62.94.49.176 at 2015-04-15 17:56:59 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/home.html.erb (2.6ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 62.94.49.176 at 2015-04-15 17:56:59 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 62.94.49.176 at 2015-04-15 17:56:59 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 62.94.49.176 at 2015-04-15 17:56:59 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.2ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 62.94.49.176 at 2015-04-15 17:56:59 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 62.94.49.176 at 2015-04-15 17:56:59 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (0.1ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 62.94.49.176 at 2015-04-15 17:56:59 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (0.1ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 62.94.49.176 at 2015-04-15 17:56:59 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (0.1ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 62.94.49.176 at 2015-04-15 17:56:59 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (0.2ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 62.94.49.176 at 2015-04-15 17:56:59 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (0.1ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 62.94.49.176 at 2015-04-15 17:56:59 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (0.1ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/home.js" for 62.94.49.176 at 2015-04-15 17:57:00 +0000
+Processing by StaticPagesController#homejs as JS
+  Rendered static_pages/home.js.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 62.94.49.176 at 2015-04-15 17:57:22 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/home.html.erb (1.7ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 62.94.49.176 at 2015-04-15 17:57:22 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 62.94.49.176 at 2015-04-15 17:57:22 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.7ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 62.94.49.176 at 2015-04-15 17:57:22 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 62.94.49.176 at 2015-04-15 17:57:22 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (0.1ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 62.94.49.176 at 2015-04-15 17:57:22 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 62.94.49.176 at 2015-04-15 17:57:22 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (0.2ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 62.94.49.176 at 2015-04-15 17:57:23 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 62.94.49.176 at 2015-04-15 17:57:23 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (0.1ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 62.94.49.176 at 2015-04-15 17:57:23 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (0.1ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 62.94.49.176 at 2015-04-15 17:57:23 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (0.2ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/home.js" for 62.94.49.176 at 2015-04-15 17:57:23 +0000
+Processing by StaticPagesController#homejs as JS
+  Rendered static_pages/home.js.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tempmaxmin.html" for 62.94.49.176 at 2015-04-15 17:57:41 +0000
+Processing by StaticPagesController#tempmaxmin as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/tempmaxmin.html.erb (3.2ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 62.94.49.176 at 2015-04-15 17:57:41 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 62.94.49.176 at 2015-04-15 17:57:41 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 62.94.49.176 at 2015-04-15 17:57:41 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/tempmaxmin.js" for 62.94.49.176 at 2015-04-15 17:57:41 +0000
+Processing by StaticPagesController#tempmaxminjs as */*
+  Rendered static_pages/tempmaxmin.js.erb (1.0ms)
+Completed 200 OK in 208ms (Views: 207.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 62.94.49.176 at 2015-04-15 17:57:41 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 62.94.49.176 at 2015-04-15 17:57:41 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (0.3ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 62.94.49.176 at 2015-04-15 17:57:41 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 62.94.49.176 at 2015-04-15 17:57:41 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (0.1ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 62.94.49.176 at 2015-04-15 17:57:41 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (0.1ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 62.94.49.176 at 2015-04-15 17:57:42 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (0.1ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 62.94.49.176 at 2015-04-15 17:57:42 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/last24hr.html" for 62.94.49.176 at 2015-04-15 17:57:46 +0000
+Processing by StaticPagesController#last24hr as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.0ms)
+  Rendered static_pages/last24hr.html (2.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdatatable.js" for 62.94.49.176 at 2015-04-15 17:57:46 +0000
+Processing by StaticPagesController#jqxdatatable as JS
+  Rendered jqwidgets/jqxdatatable.js (6.9ms)
+Completed 200 OK in 32ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/last24hr.js" for 62.94.49.176 at 2015-04-15 17:57:46 +0000
+Processing by StaticPagesController#last24hrjs as */*
+  Rendered static_pages/last24hr.js.erb (1.0ms)
+Completed 200 OK in 14ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 62.94.49.176 at 2015-04-15 17:57:46 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 62.94.49.176 at 2015-04-15 17:57:46 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 62.94.49.176 at 2015-04-15 17:57:46 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 62.94.49.176 at 2015-04-15 17:57:46 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 62.94.49.176 at 2015-04-15 17:57:46 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (0.1ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 62.94.49.176 at 2015-04-15 17:57:46 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (0.1ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 62.94.49.176 at 2015-04-15 17:57:46 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 62.94.49.176 at 2015-04-15 17:57:46 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (0.1ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 62.94.49.176 at 2015-04-15 17:57:46 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (0.1ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 62.94.49.176 at 2015-04-15 17:57:46 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (0.1ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tempmaxmin.html" for 62.94.49.176 at 2015-04-15 17:58:02 +0000
+Processing by StaticPagesController#tempmaxmin as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.0ms)
+  Rendered static_pages/tempmaxmin.html.erb (1.6ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 62.94.49.176 at 2015-04-15 17:58:02 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/home.html.erb (2.7ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 62.94.49.176 at 2015-04-15 17:58:02 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 62.94.49.176 at 2015-04-15 17:58:02 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 62.94.49.176 at 2015-04-15 17:58:02 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 62.94.49.176 at 2015-04-15 17:58:02 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 62.94.49.176 at 2015-04-15 17:58:02 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 62.94.49.176 at 2015-04-15 17:58:02 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (0.1ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 62.94.49.176 at 2015-04-15 17:58:02 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (0.1ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 62.94.49.176 at 2015-04-15 17:58:02 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (0.3ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 62.94.49.176 at 2015-04-15 17:58:02 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (0.1ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 62.94.49.176 at 2015-04-15 17:58:02 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/home.js" for 62.94.49.176 at 2015-04-15 17:58:02 +0000
+Processing by StaticPagesController#homejs as JS
+  Rendered static_pages/home.js.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 62.94.49.176 at 2015-04-15 17:58:46 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/home.html.erb (4.9ms)
+Completed 200 OK in 1936ms (Views: 1935.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 62.94.49.176 at 2015-04-15 17:58:48 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 62.94.49.176 at 2015-04-15 17:58:48 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 62.94.49.176 at 2015-04-15 17:58:48 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.2ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 62.94.49.176 at 2015-04-15 17:58:48 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 62.94.49.176 at 2015-04-15 17:58:48 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (0.1ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 62.94.49.176 at 2015-04-15 17:58:48 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (0.2ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 62.94.49.176 at 2015-04-15 17:58:48 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (0.1ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 62.94.49.176 at 2015-04-15 17:58:48 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (0.4ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 62.94.49.176 at 2015-04-15 17:58:48 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (0.1ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 62.94.49.176 at 2015-04-15 17:58:48 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (0.1ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/home.js" for 62.94.49.176 at 2015-04-15 17:58:48 +0000
+Processing by StaticPagesController#homejs as JS
+  Rendered static_pages/home.js.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 62.94.49.176 at 2015-04-15 17:59:20 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/home.html.erb (2.5ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 62.94.49.176 at 2015-04-15 17:59:20 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 62.94.49.176 at 2015-04-15 17:59:20 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 62.94.49.176 at 2015-04-15 17:59:20 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 62.94.49.176 at 2015-04-15 17:59:20 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 62.94.49.176 at 2015-04-15 17:59:20 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (0.1ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 62.94.49.176 at 2015-04-15 17:59:20 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (0.1ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 62.94.49.176 at 2015-04-15 17:59:20 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (0.1ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 62.94.49.176 at 2015-04-15 17:59:20 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (0.2ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 62.94.49.176 at 2015-04-15 17:59:20 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (0.1ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 62.94.49.176 at 2015-04-15 17:59:20 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/home.js" for 62.94.49.176 at 2015-04-15 17:59:20 +0000
+Processing by StaticPagesController#homejs as JS
+  Rendered static_pages/home.js.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 62.94.49.176 at 2015-04-15 17:59:47 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/home.html.erb (3.7ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 62.94.49.176 at 2015-04-15 17:59:47 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 62.94.49.176 at 2015-04-15 17:59:47 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 62.94.49.176 at 2015-04-15 17:59:47 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 62.94.49.176 at 2015-04-15 17:59:47 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 62.94.49.176 at 2015-04-15 17:59:47 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (0.1ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 62.94.49.176 at 2015-04-15 17:59:47 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 62.94.49.176 at 2015-04-15 17:59:47 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 62.94.49.176 at 2015-04-15 17:59:47 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (0.1ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 62.94.49.176 at 2015-04-15 17:59:47 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 62.94.49.176 at 2015-04-15 17:59:47 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (0.1ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/home.js" for 62.94.49.176 at 2015-04-15 17:59:47 +0000
+Processing by StaticPagesController#homejs as JS
+  Rendered static_pages/home.js.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 62.94.49.176 at 2015-04-15 18:00:43 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/home.html.erb (4.5ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 62.94.49.176 at 2015-04-15 18:00:44 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 62.94.49.176 at 2015-04-15 18:00:44 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 62.94.49.176 at 2015-04-15 18:00:44 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 62.94.49.176 at 2015-04-15 18:00:44 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 62.94.49.176 at 2015-04-15 18:00:44 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (0.1ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 62.94.49.176 at 2015-04-15 18:00:44 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (0.1ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 62.94.49.176 at 2015-04-15 18:00:44 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (0.1ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 62.94.49.176 at 2015-04-15 18:00:44 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 62.94.49.176 at 2015-04-15 18:00:44 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (0.2ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 62.94.49.176 at 2015-04-15 18:00:44 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (0.1ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/home.js" for 62.94.49.176 at 2015-04-15 18:00:44 +0000
+Processing by StaticPagesController#homejs as JS
+  Rendered static_pages/home.js.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/last24hr.html" for 66.249.67.149 at 2015-04-15 18:02:08 +0000
+Processing by StaticPagesController#last24hr as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.0ms)
+  Rendered static_pages/last24hr.html (1.9ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms)
