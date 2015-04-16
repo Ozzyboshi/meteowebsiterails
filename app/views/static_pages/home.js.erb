@@ -19,6 +19,7 @@ $(document).ready(function () {
 	print_gauge_vento($('#gaugevento'),1600);
 	
 	print_termometro_pioggia($('#termometropioggia'));
+	print_termometro($('#humidex'));
 
 	$(".animsition").animsition({
   
@@ -85,6 +86,23 @@ function updateMeteo(sales) {
 	$("#gaugevento").jqxGauge('setValue', 90+(22.5*sales[0].vento_direzione));
 	$('#termometropioggia').jqxLinearGauge('value',sales[0].pioggia_parziale_day*1);
 	$("#pioggiamezzanotte").text(sales[0].pioggia_parziale_day*1+" mm");
+
+	var e = 6.112*Math.pow(10,(7.5*(sales[0].temperatura_esterna*1)/(237.7+(sales[0].temperatura_esterna*1))))*(sales[0].umidita_esterna*1)/100
+	var temphumidex=(sales[0].temperatura_esterna*1) + 0.5555 * (e - 10);
+	var humidexwarning="";
+	if (temphumidex.toFixed(2)<30)
+		humidexwarning="Poche persone percepiscono disagio";
+	else if (temphumidex.toFixed(2)>=30 && temphumidex.toFixed(2)<35)
+		humidexwarning="Sensazione di malessere pi&ugrave o meno significativa. ";
+	else if (temphumidex.toFixed(2)>=35 && temphumidex.toFixed(2)<40)
+		humidexwarning="Sensazione di malessere abbastanza intensa. Prudenza. Limitare alcune attivit&agrave; fisiche gravose. ";
+	else if (temphumidex.toFixed(2)>=40 && temphumidex.toFixed(2)<46)
+		humidexwarning="Sensazione di malessere generalizzato. Pericolo. Evitare gli sforzi. ";
+	else if (temphumidex.toFixed(2)>=46 && temphumidex.toFixed(2)<54)
+		humidexwarning="Grave pericolo. Sospendere le attivit&agrave; fisiche. ";
+	else if (temphumidex.toFixed(2)>=54)
+		humidexwarning="Colpo di calore imminente (pericolo di morte)";
+	$("#humidexdesc").text(temphumidex.toFixed(2)+" °"+" - "+humidexwarning);
 }
 
 function print_termometro(divobjectselector)

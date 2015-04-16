@@ -16,7 +16,7 @@
 		<%= render 'navbar', :locals => {:page => 'home.html'} %>
 		<div class="container animsition">
 
-			<h4>ULTIMO AGGIORNAMENTO : <quote id=data></quote><br><br><quote id=dataswatch></quote></h4>
+			<h4>ULTIMO AGGIORNAMENTO : <quote id=data></quote><br><br><a id=dataswatch href="http://www.swatch.com/en/internet-time"></a></h4>
 		
 			<div class="row">
 				<!-- Inizio temperatura esterna -->
@@ -50,14 +50,14 @@
 
 			<div class="row">
 				<!-- Inizio pressione -->
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<h4>Pressione</h4>
 					<div id="gaugepressione" class=gauge></div><br>
 					<p class=termometrodesc><h4><span id=pressione></span></h4>
 				</div>
 			
 				<!-- Inizio vento -->
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<h4>Vento</h4>
 					<div id="gaugevento" class=gauge></div><br>
 					<p class=termometrodesc><h4>Vento Medio : <span id=ventomedio></span></h4>
@@ -65,10 +65,16 @@
 				</div>
 			
 				<!-- Inizio pioggia -->
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<h4>Pioggia</h4>
 					<div id="termometropioggia" class=termometro></div><br>
 					<p class=termometrodesc><h4>Pioggia di oggi : <span id=pioggiamezzanotte></span></h4>
+				</div>
+				<!-- Inizio temperatura percepita indice humex -->
+				<div class="col-sm-3">
+					<h4>Indice Humidex</h4>
+					 <div id="humidex" class=termometro></div><br>
+					 <p class=termometrodesc><h4><span id=humidexdesc></span></h4>
 				</div>
 			</div>
 		</div>	
