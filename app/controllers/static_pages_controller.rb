@@ -11,6 +11,12 @@ class StaticPagesController < ApplicationController
 	def last24hr
 		render :last24hr,:layout => false
 	end
+	def last24hrumi
+		render :last24hrumi,:layout => false
+	end
+	def last24hrpr
+		render :last24hrpr,:layout => false
+	end
 	
 	def homejs
 		respond_to do |format|
@@ -22,6 +28,12 @@ class StaticPagesController < ApplicationController
 	end
 	def last24hrjs
 		render 'last24hr.js.erb' 
+	end
+	def last24hrumijs
+		render 'last24hrumi.js.erb' 
+	end
+	def last24hrprjs
+		render 'last24hrpr.js.erb' 
 	end
 	
 	def jqxtabsjs

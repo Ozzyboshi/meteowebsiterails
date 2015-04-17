@@ -12,27 +12,19 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.4.3/css/animsition.min.css">
 	</head>
 	<body>
-		<%= render 'navbar', :locals => {:page => 'tempmaxmin.html'} %>
-		<br>
-		<br>
+		<%= render 'navbar', :locals => {:page => 'last24hr.html'} %>
 		<div class="container animsition">
 			<div class="row">
-				<!-- Inizio temperatura massima -->
-				<div class="col-sm-6">
-					<h3>Temperatura massima</h3>
-					<div id="termometromax" class=termometro></div><br>
-					<p class=termometro><h4><span id=termometromaxdesc></span><br><span id=termometromaxdescswatch ></span></h4>
-				</div>
-				
-				<!-- Inizio temperatura minima -->
-				<div class="col-sm-6">
-					<h3>Temperatura minima</h3>
-					<div id="termometromin" class=termometro></div><br>
-					<p class=termometrodesc><h4> <span id=termometromindesc></span><br><span id=termometromindescswatch ></span></h4><
+				<!-- Inizio pressione 24hr -->
+				<div class="col-sm-12">
+					<div id="gauge" ></div>
+					<br>
+					<input type=button id=refresh value="Aggiorna grafico">
 				</div>
 			</div>
-		</div>	
-		<br><br>
+		</div>
+
+
 		<%= render "footer" %>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -44,7 +36,11 @@
 		<script src="jqwidgets/jqxchart.js"></script>
 		<script src="jqwidgets/jqxgauge.js"></script>
 		<script src="jqwidgets/jqxtabs.js"></script>
+		<script src="jqwidgets/jqxdatatable.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.4.3/js/jquery.animsition.min.js"></script>
-		<script src="./js/tempmaxmin.js"></script>
+		<script src="http://code.highcharts.com/highcharts.js"></script>
+		<script src="http://code.highcharts.com/highcharts-more.js"></script>
+		<script src="http://code.highcharts.com/modules/exporting.js"></script>
+		<script src="./js/last24hrpr.js"></script>
 	</body>
 </html>
