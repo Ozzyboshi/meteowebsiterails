@@ -103,6 +103,10 @@ function updateMeteo(sales) {
 	else if (temphumidex.toFixed(2)>=54)
 		humidexwarning="Colpo di calore imminente (pericolo di morte)";
 	$("#humidexdesc").text(temphumidex.toFixed(2)+" °"+" - "+humidexwarning);
+
+	$('#humidex').jqxLinearGauge('animationDuration', 1000);
+	$('#humidex').jqxLinearGauge('value',temphumidex*1);
+	
 }
 
 function print_termometro(divobjectselector)
