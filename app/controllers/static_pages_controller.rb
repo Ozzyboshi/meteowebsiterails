@@ -28,6 +28,9 @@ class StaticPagesController < ApplicationController
 	def last48hrpr
 		render :last48hrpr,:layout => false
 	end
+	def calendar
+		render :calendar,:layout => false
+	end
 	
 	def homejs
 		respond_to do |format|
@@ -54,6 +57,9 @@ class StaticPagesController < ApplicationController
 	end
 	def last48hrprjs
 		render 'last48hrpr.js.erb' 
+	end
+	def calendarjs
+		render 'calendar.js.erb' 
 	end
 	
 	def jqxtabsjs
