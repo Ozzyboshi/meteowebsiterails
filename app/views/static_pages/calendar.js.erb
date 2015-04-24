@@ -25,7 +25,7 @@ $( document ).ready(
 			minorTicks = { size: '5%', interval: 2.5, style: { 'stroke-width': 1, stroke: '#aaaaaa'} },
 			labels = { interval: 10 };
 
-			temperaturechart = new Highcharts.Chart({
+		temperaturechart = new Highcharts.Chart({
 			chart: {
 				renderTo: 'gauge',
 				type: 'spline',
@@ -76,7 +76,7 @@ $( document ).ready(
 				series: [
 					{
 						type: 'area',
-						name: 'Temperatura',
+						name: 'Temperatura esterna',
 						pointInterval: 24 * 3600 * 1000,
 						data: [],
 					},
@@ -91,18 +91,143 @@ $( document ).ready(
 					}
 				]
 		});
+		
+		umiditachart = new Highcharts.Chart({
+			chart: {
+				renderTo: 'gaugeumidita',
+				type: 'spline',
+				zoomType: 'x',
+				spacingRight: 20,
+			},
+			title: {
+				text: ''
+			},
+			xAxis: {
+				type: 'datetime',
+			},
+			yAxis: {
+				minPadding: 0.2,
+				title: {
+					text: 'Umidita (%)',
+				}
+			},
+			tooltip: {
+				shared: true,
+				xDateFormat: '%d/%m/%Y %H:%M:%S' 
+			},
+			legend: {
+				enabled: false
+			},
+			plotOptions: {
+			area: {   
+				fillColor: {
+					linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1},
+					stops: [
+								[0, "#FF0000"],
+								[1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(10).get('rgba')]
+							]
+					},
+					lineWidth: 1,
+					marker: {
+						enabled: false
+					},
+					shadow: false,
+					states: {
+						hover: {
+								lineWidth: 1
+							}
+						},
+						threshold: null
+					}
+				},
+				series: [
+					{
+						type: 'area',
+						name: 'Umidita esterna',
+						pointInterval: 24 * 3600 * 1000,
+						data: [],
+					},
+					{
+						type: 'line',
+						name: 'Umidita Interna',
+						pointInterval: 24 * 3600 * 1000,
+						data: [],
+						lineWidth: 2,
+						marker: { fillColor: '#A5B7CD', radius: 10 },
+						color: '#A5B7CD',
+					}
+				]
+		});
+		
+		pressionechart = new Highcharts.Chart({
+			chart: {
+				renderTo: 'gaugepressione',
+				type: 'spline',
+				zoomType: 'x',
+				spacingRight: 20,
+			},
+			title: {
+				text: ''
+			},
+			xAxis: {
+				type: 'datetime',
+			},
+			yAxis: {
+				minPadding: 0.2,
+				title: {
+					text: 'Umidita (%)',
+				}
+			},
+			tooltip: {
+				shared: true,
+				xDateFormat: '%d/%m/%Y %H:%M:%S' 
+			},
+			legend: {
+				enabled: false
+			},
+			plotOptions: {
+			area: {   
+				fillColor: {
+					linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1},
+					stops: [
+								[0, "#FF0000"],
+								[1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(10).get('rgba')]
+							]
+					},
+					lineWidth: 1,
+					marker: {
+						enabled: false
+					},
+					shadow: false,
+					states: {
+						hover: {
+								lineWidth: 1
+							}
+						},
+						threshold: null
+					}
+				},
+				series: [
+					{
+						type: 'area',
+						name: 'Umidita esterna',
+						pointInterval: 24 * 3600 * 1000,
+						data: []
+					}
+				]
+		});
 	}
 );
 $( "#datepicker" ).change(
 	function () {
+		waitingDialog.show();
 		handleRefresh1();
 	}
 );
 
 function handleRefresh1()
 {
-	
-	var url ="http://meteo.ozzyboshi.com:8888/WeatherStation/MeteoServices/Readings/readingsByDay/updateMeteoReadings?date="+getQueryDate()+"&filtro=42";
+	var url ="http://meteo.ozzyboshi.com:8888/WeatherStation/MeteoServices/Readings/readingsByDay/updateMeteoReadings?date="+getQueryDate()+"&filtro=318";
 	var newScriptElement = document.createElement("script");
 	newScriptElement.setAttribute("src",url);
 	newScriptElement.setAttribute("id","jsonp");
@@ -123,18 +248,34 @@ function updateMeteoReadings(letture)
 {
 	var array = new Array();
 	var array2 = new Array();
+	var array3 = new Array();
+	var array4 = new Array();
+	var array5 = new Array();
 	temperaturechart.series[0].setData([]);
+	temperaturechart.series[1].setData([]);
+	umiditachart.series[0].setData([]);
+	umiditachart.series[1].setData([]);
+	pressionechart.series[0].setData([]);
 	var date;
 	var newDate;
 	temperaturechart.setTitle({text: "Temperatura per il giorno "+getQueryDate()});
+	umiditachart.setTitle({text: "Umidità per il giorno "+getQueryDate()});
+	pressionechart.setTitle({text: "Pressione per il giorno "+getQueryDate()});
 	for (var i=0;i<letture.length;i++)
 	{		
 		date = new Date(String(letture[i].data).replace(" ","T")+"Z");
 		array[i]=[date.getTime()+(date.getTimezoneOffset()*-1)*60*1000,eval(letture[i].temperatura_esterna)];
 		array2[i]=[date.getTime()+(date.getTimezoneOffset()*-1)*60*1000,eval(letture[i].temperatura_interna)];
+		array3[i]=[date.getTime()+(date.getTimezoneOffset()*-1)*60*1000,eval(letture[i].umidita_esterna)];
+		array4[i]=[date.getTime()+(date.getTimezoneOffset()*-1)*60*1000,eval(letture[i].umidita_interna)];
+		array5[i]=[date.getTime()+(date.getTimezoneOffset()*-1)*60*1000,eval(letture[i].pressione)];
 	}
 	temperaturechart.series[0].setData(array,true);
 	temperaturechart.series[1].setData(array2,true);
+	umiditachart.series[0].setData(array3,true);
+	umiditachart.series[1].setData(array4,true);
+	pressionechart.series[0].setData(array5,true);
+	waitingDialog.hide();
 }
 
 function getQueryDate()

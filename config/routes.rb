@@ -30,6 +30,7 @@ Rails.application.routes.draw do
   get 'jqwidgets/jqxdatatable' => 'static_pages#jqxdatatable'
   get 'scripts/gettheme' => 'static_pages#getthemejs'
   get 'js/bootstrap.min.js' => 'static_pages#boot'
+  get 'js/bootstrap-waitingfor.js' => 'static_pages#bootstrapwaitingforjs'
   get 'css/bootstrap.min.css' => 'static_pages#bootcss'
   get 'css/custom.css' => 'static_pages#customcss'
 

@@ -106,6 +106,9 @@ class StaticPagesController < ApplicationController
 	def boot
 		render 'js/bootstrap.min.js.erb'
 	end
+	def bootstrapwaitingforjs
+		render 'js/bootstrap-waitingfor.js.erb'
+	end
 	
 	def bootcss
 		render 'css/bootstrap.min.css.erb'

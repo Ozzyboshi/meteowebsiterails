@@ -158,13 +158,13 @@ function print_gauge(divobjectselector,maxvalue)
 }
 function print_gauge_pressione(divobjectselector,maxvalue)
 {
-	var labels = { visible: true, position: 'inside',interval:100 };
+	var labels = { visible: true, position: 'inside',interval:10 };
 	$(divobjectselector).jqxGauge({
-				ranges: [{ startValue: 1000, endValue: 1020, style: { fill: '#e2e2e2', stroke: '#e2e2e2' }, startDistance: '5%', endDistance: '5%', endWidth: 13, startWidth: 13 },
-						{ startValue: 1020, endValue: 1040, style: { fill: '#f6de54', stroke: '#f6de54' }, startDistance: '5%', endDistance: '5%', endWidth: 13, startWidth: 13 },
-						{ startValue: 1040, endValue: 1060, style: { fill: '#db5016', stroke: '#db5016' }, startDistance: '5%', endDistance: '5%', endWidth: 13, startWidth: 13 },
-						{ startValue: 1060, endValue: 1100, style: { fill: '#d12841', stroke: '#d32841' }, startDistance: '5%', endDistance: '5%', endWidth: 13, startWidth: 13 }
-				],
+				ranges: [
+							{ startValue: 1000, endValue: 1020, style: { fill: '#e2e2e2', stroke: '#e2e2e2' }, startDistance: '5%', endDistance: '5%', endWidth: 13, startWidth: 13 },
+							{ startValue: 1020, endValue: 1040, style: { fill: '#f6de54', stroke: '#f6de54' }, startDistance: '5%', endDistance: '5%', endWidth: 13, startWidth: 13 },
+							{ startValue: 1040, endValue: 1050, style: { fill: '#db5016', stroke: '#db5016' }, startDistance: '5%', endDistance: '5%', endWidth: 13, startWidth: 13 }
+						],
 				cap: { radius: 0.04 },
 				caption: { offset: [0, -25], value: 'hPa', position: 'bottom' },
 				value: 0,
@@ -172,13 +172,13 @@ function print_gauge_pressione(divobjectselector,maxvalue)
 				animationDuration: 1500,
 				colorScheme: 'scheme04',
 				labels: labels,
-				ticksMinor: { interval: 10, size: '7%' },
-				ticksMajor: { interval: 50, size: '15%' }
+				ticksMinor: { interval: 10, size: '5%' },
+				ticksMajor: { interval: 50, size: '12%' }
 	});
 	$(divobjectselector).jqxGauge({ width: 160 });
 	$(divobjectselector).jqxGauge({ height: 160 });
 	$(divobjectselector).jqxGauge({ min: 1000 });
-	$(divobjectselector).jqxGauge({ max: 1100 });
+	$(divobjectselector).jqxGauge({ max: 1050 });
 }
 function print_gauge_vento(divobjectselector,maxvalue)
 {
