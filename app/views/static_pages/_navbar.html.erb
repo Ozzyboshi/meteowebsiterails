@@ -14,13 +14,13 @@
 					<ul class="nav navbar-nav navbar-right">
 						<% if locals[:page] == "home.html" %> <li class="active"> <% else %> <li> <% end %>
 						<a href="/">Live data</a></li>
-			   
+
 						<% if locals[:page] == "tempmaxmin.html" %> <li class="active"> <% else %> <li> <% end %>
 						<a href="tempmaxmin.html">Max & Min oggi</a></li>
-						
+
 						<% if locals[:page] == "calendar.html" %> <li class="active"> <% else %> <li> <% end %>
 						<a href="calendar.html">Calendario</a></li>
-					
+
 						<% if locals[:page] == "last24hr.html" %> <li class="active dropdown"> <% else %> <li class="dropdown"> <% end %>
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dati centralina <b class="caret"></b></a>
 							<ul class="dropdown-menu">
@@ -33,6 +33,16 @@
 								<li><a href="last48hr.html">Temperatura</a></li>
 								<li><a href="last48hrumi.html">Umidit&agrave;</a></li>
 								<li><a href="last48hrpr.html">Pressione</a></li>
+								<li class="divider"></li>
+								<li class="dropdown-header">Precipitazioni vs Temperature medie</li>
+								<li><a href="rainfall.html?days=10&datelength=10">Ultimi 10 giorni</a></li>
+								<li><a href="rainfall.html?days=30&datelength=10">Ultimi 30 giorni</a></li>
+								<li><a href="rainfall.html?days=45&datelength=10">Ultimi 45 giorni</a></li>
+								<li><a href="rainfall.html?days=60&datelength=10">Ultimi 60 giorni</a></li>
+								<li><a href="rainfall.html?days=100&datelength=10">Ultimi 100 giorni</a></li>
+								<li><a href="rainfall.html?days=30&datelength=7">Ultimi 30 giorni ripartiti per mese</a></li>
+								<li><a href="rainfall.html?days=60&datelength=7">Ultimi 60 giorni ripartiti per mese</a></li>
+								<li><a href="rainfall.html?days=90&datelength=7">Ultimi 90 giorni ripartiti per mese</a></li>
 							</ul>
 						</li>
 					</ul>

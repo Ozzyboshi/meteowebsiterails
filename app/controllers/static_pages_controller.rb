@@ -31,6 +31,9 @@ class StaticPagesController < ApplicationController
 	def calendar
 		render :calendar,:layout => false
 	end
+	def rainfall
+		render :rainfall,:layout => false
+	end
 	
 	def homejs
 		respond_to do |format|
@@ -60,6 +63,9 @@ class StaticPagesController < ApplicationController
 	end
 	def calendarjs
 		render 'calendar.js.erb' 
+	end
+	def rainfalljs
+		render 'rainfall.js.erb' 
 	end
 	
 	def jqxtabsjs

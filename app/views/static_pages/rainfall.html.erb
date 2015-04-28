@@ -10,29 +10,14 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/custom.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.4.3/css/animsition.min.css">
-		<style>.row {margin-bottom:50px}</style>
+
 	</head>
 	<body>
-		<%= render 'navbar', :locals => {:page => 'calendar.html'} %>
+		<%= render 'navbar', :locals => {:page => 'last24hr.html'} %>
 		<div class="container animsition">
 			<div class="row">
 				<div class="col-sm-12">
-					<h4>Date: <input type="text" id="datepicker"></h4>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12">
-					<div id="gauge" ></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12">
-					<div id="gaugeumidita" ></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12">
-					<div id="gaugepressione" ></div>
+					<div id="container"></div>
 				</div>
 			</div>
 		</div>	
@@ -51,6 +36,6 @@
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.4.3/js/jquery.animsition.min.js"></script>
 		<script src="./js/bootstrap-waitingfor.js"></script>
-		<script src="./js/calendar.js"></script>
+		<script src="./js/rainfall.js?days=<%= params[:days] %>&datelength=<%= params[:datelength] %>"></script>
     </body>
 </html>
