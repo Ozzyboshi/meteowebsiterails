@@ -85,7 +85,7 @@ $( document ).ready(
 
 function handleRefresh1()
 {
-	var url ="http://meteo.ozzyboshi.com:8888/WeatherStation/MeteoServices/Readings/LastRainfallsAndAvgTemp/updateMeteo?days=<%= params[:days] %>&datelength=<%= params[:datelength] %>";
+	var url ="http://meteo.ozzyboshi.com:8888/WeatherStation/MeteoServices/Readings/LastRainfallsAndAvgTemp/updateMeteo?days=<%= params[:days] %>&datelength=<%= params[:datelength] %>&timeunit=<%= params[:timeunit] %>";
 	var newScriptElement = document.createElement("script");
 	newScriptElement.setAttribute("src",url);
 	newScriptElement.setAttribute("id","jsonp");

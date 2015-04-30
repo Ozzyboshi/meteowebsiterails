@@ -84,8 +84,8 @@ function updateMeteo(sales) {
 	$("#gaugepressione").jqxGauge('setValue', sales[0].pressione*1);
 
 	$("#gaugevento").jqxGauge('setValue', 90+(22.5*sales[0].vento_direzione));
-	$('#termometropioggia').jqxLinearGauge('value',sales[0].pioggia_parziale_day*1);
-	$("#pioggiamezzanotte").text(sales[0].pioggia_parziale_day*1+" mm");
+	$('#termometropioggia').jqxLinearGauge('value',sales[0].day_data[0].pioggia*1);
+	$("#pioggiamezzanotte").text(sales[0].day_data[0].pioggia*1+" mm");
 
 	var e = 6.112*Math.pow(10,(7.5*(sales[0].temperatura_esterna*1)/(237.7+(sales[0].temperatura_esterna*1))))*(sales[0].umidita_esterna*1)/100
 	var temphumidex=(sales[0].temperatura_esterna*1) + 0.5555 * (e - 10);
