@@ -28,7 +28,7 @@ $( document ).ready(
 					zoomType: 'xy'
 				},
 				title: {
-					text: 'Precipitazioni vs Temperatura Media ultimi <%= params[:days] %> giorni'
+					text: 'Precipitazioni vs Temperatura Media ultimi <%= params[:days] %><% if params[:timeunit]=="3" then %> Mesi<% else %><% if params[:timeunit]=="2" then %> Ore <% else %> Giorni <% end %> <% end %>'
 				},
 				yAxis: [{ // Primary yAxis
 					labels: {

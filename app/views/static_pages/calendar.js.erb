@@ -18,7 +18,8 @@ $( document ).ready(
 			overlayClass			:	'animsition-overlay-slide',
 			overlayParentElement  :   'body'
 		});
-		handleRefresh1();
+		handleRefresh("http://meteo.ozzyboshi.com:8888/WeatherStation/MeteoServices/Readings/readingsByDay/updateMeteoReadings?date="+getQueryDate()+"&filtro=318","jsonp1");
+		handleRefresh("http://meteo.ozzyboshi.com:8888/WeatherStation/MeteoServices/Readings/LastRainfallsAndAvgTemp/updateMeteoRainfalls?days=10&datelength=13&timeunit=2&period="+getQueryDate(),"jsonp2");
 		
 		var theme = getDemoTheme(),
 			majorTicks = { size: '15%', interval: 10 },
@@ -216,30 +217,90 @@ $( document ).ready(
 					}
 				]
 		});
+		
+		var chart;
+		$(function () {
+			precipitazionichart = new Highcharts.Chart({
+				chart: {
+					renderTo: 'container',
+					zoomType: 'xy'
+				},
+				title: {
+					text: 'Precipitazioni vs Temperatura Media ripartita per ora'
+				},
+				yAxis: [{ // Primary yAxis
+					labels: {
+						format: '{value} °C',
+						style: {
+							color: Highcharts.getOptions().colors[1]
+						}
+					},
+					title: {
+						text: 'Temperature',
+						style: {
+							color: Highcharts.getOptions().colors[1]
+						}
+					}
+				}, { // Secondary yAxis
+					title: {
+						text: 'Rainfall',
+						style: {
+							color: Highcharts.getOptions().colors[0]
+						}
+					},
+					labels: {
+						format: '{value} mm',
+						style: {
+							color: Highcharts.getOptions().colors[0]
+						}
+					},
+					opposite: true
+				}],
+
+				tooltip: {
+					shared: true
+				},
+				series: [{
+					name: 'Precipitazioni',
+					type: 'column',
+					yAxis: 1,
+					tooltip: {
+						pointFormat: '<span style="font-weight: bold; color: {series.color}">{series.name}</span>: <b>{point.y:.1f} mm</b> '
+					}
+				}, {
+					name: 'Temperatura media',
+					type: 'spline',
+					tooltip: {
+						pointFormat: '<span style="font-weight: bold; color: {series.color}">{series.name}</span>: <b>{point.y:.1f}°C</b> '
+					}
+				}]
+			});
+		});	
 	}
 );
 $( "#datepicker" ).change(
 	function () {
 		waitingDialog.show();
-		handleRefresh1();
+		handleRefresh("http://meteo.ozzyboshi.com:8888/WeatherStation/MeteoServices/Readings/readingsByDay/updateMeteoReadings?date="+getQueryDate()+"&filtro=318","jsonp1");
+		handleRefresh("http://meteo.ozzyboshi.com:8888/WeatherStation/MeteoServices/Readings/LastRainfallsAndAvgTemp/updateMeteoRainfalls?days=10&datelength=13&timeunit=2&period="+getQueryDate(),"jsonp2");
 	}
 );
 
-function handleRefresh1()
+function handleRefresh(url,tagname)
 {
-	var url ="http://meteo.ozzyboshi.com:8888/WeatherStation/MeteoServices/Readings/readingsByDay/updateMeteoReadings?date="+getQueryDate()+"&filtro=318";
+	//var url ="http://meteo.ozzyboshi.com:8888/WeatherStation/MeteoServices/Readings/readingsByDay/updateMeteoReadings?date="+getQueryDate()+"&filtro=318";
 	var newScriptElement = document.createElement("script");
 	newScriptElement.setAttribute("src",url);
-	newScriptElement.setAttribute("id","jsonp");
+	newScriptElement.setAttribute("id",tagname);
 			
-	var oldScriptElement = document.getElementById("jsonp");
+	var oldScriptElement = document.getElementById(tagname);
 	var head = document.getElementsByTagName("head")[0];
 	if (oldScriptElement == null) {
 		head.appendChild(newScriptElement);
 	}
 	else
 	{
-		head.replaceChild(newScriptElement, oldScriptElement);	
+		head.replaceChild(newScriptElement, oldScriptElement);
 	}
 }
 
@@ -276,6 +337,25 @@ function updateMeteoReadings(letture)
 	umiditachart.series[1].setData(array4,true);
 	pressionechart.series[0].setData(array5,true);
 	waitingDialog.hide();
+}
+function updateMeteoRainfalls(letture)
+{
+	var array = new Array();
+	var array2 = new Array();
+	var array3 = new Array();
+	precipitazionichart.series[0].setData([]);
+	precipitazionichart.series[1].setData([]);
+	for (var i=0;i<letture.length;i++)
+	{
+		var date = new Date(String(letture[i].data).replace(" ","T")+"Z");
+		array[i]=letture[i].data;
+		array2[i]=eval(letture[i].pioggia);
+		array3[i]=eval(letture[i].temp_esterna_media);
+	}
+	
+	precipitazionichart.xAxis[0].setCategories(array.reverse(),true);
+	precipitazionichart.series[0].setData(array2.reverse(),true);
+	precipitazionichart.series[1].setData(array3.reverse(),true);
 }
 
 function getQueryDate()
