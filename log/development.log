@@ -77179,3 +77179,1055 @@ Started GET "/js/calendar.js" for 127.0.0.1 at 2015-05-05 12:50:26 +0000
 Processing by StaticPagesController#calendarjs as */*
   Rendered static_pages/calendar.js.erb (0.2ms)
 Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-13 10:23:44 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/_navbar.html.erb (1.6ms)
+  Rendered static_pages/_footer.html.erb (0.6ms)
+  Rendered static_pages/home.html.erb (60.6ms)
+Completed 200 OK in 171ms (Views: 147.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 127.0.0.1 at 2015-05-13 10:23:45 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.8ms)
+Completed 200 OK in 121ms (Views: 120.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 127.0.0.1 at 2015-05-13 10:23:45 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (5.2ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 127.0.0.1 at 2015-05-13 10:23:46 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (1.4ms)
+Completed 200 OK in 66ms (Views: 65.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 127.0.0.1 at 2015-05-13 10:23:46 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.6ms)
+Completed 200 OK in 62ms (Views: 61.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 127.0.0.1 at 2015-05-13 10:23:46 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (1.4ms)
+Completed 200 OK in 76ms (Views: 75.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 127.0.0.1 at 2015-05-13 10:23:46 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (3.3ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 127.0.0.1 at 2015-05-13 10:23:46 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (1.2ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 127.0.0.1 at 2015-05-13 10:23:46 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (5.2ms)
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 127.0.0.1 at 2015-05-13 10:23:46 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (1.4ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 127.0.0.1 at 2015-05-13 10:23:46 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (2.0ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/home.js" for 127.0.0.1 at 2015-05-13 10:23:46 +0000
+Processing by StaticPagesController#homejs as JS
+  Rendered static_pages/home.js.erb (1.3ms)
+Completed 200 OK in 34ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-13 10:31:46 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/home.html.erb (4.8ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 127.0.0.1 at 2015-05-13 10:31:46 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.2ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 127.0.0.1 at 2015-05-13 10:31:46 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 127.0.0.1 at 2015-05-13 10:31:46 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.2ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 127.0.0.1 at 2015-05-13 10:31:46 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 127.0.0.1 at 2015-05-13 10:31:46 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (0.2ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 127.0.0.1 at 2015-05-13 10:31:46 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (0.3ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 127.0.0.1 at 2015-05-13 10:31:46 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 127.0.0.1 at 2015-05-13 10:31:46 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (0.3ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 127.0.0.1 at 2015-05-13 10:31:46 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (0.2ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 127.0.0.1 at 2015-05-13 10:31:46 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/home.js" for 127.0.0.1 at 2015-05-13 10:31:46 +0000
+Processing by StaticPagesController#homejs as JS
+  Rendered static_pages/home.js.erb (1.5ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-13 10:32:24 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/home.html.erb (5.4ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 127.0.0.1 at 2015-05-13 10:32:24 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.3ms)
+Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 127.0.0.1 at 2015-05-13 10:32:24 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 127.0.0.1 at 2015-05-13 10:32:24 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 127.0.0.1 at 2015-05-13 10:32:24 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 127.0.0.1 at 2015-05-13 10:32:24 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (0.2ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 127.0.0.1 at 2015-05-13 10:32:24 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (0.2ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 127.0.0.1 at 2015-05-13 10:32:24 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (0.2ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 127.0.0.1 at 2015-05-13 10:32:24 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (0.4ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 127.0.0.1 at 2015-05-13 10:32:24 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (0.2ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 127.0.0.1 at 2015-05-13 10:32:24 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (0.2ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/home.js" for 127.0.0.1 at 2015-05-13 10:32:24 +0000
+Processing by StaticPagesController#homejs as JS
+  Rendered static_pages/home.js.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-13 10:34:57 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/home.html.erb (2.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 127.0.0.1 at 2015-05-13 10:34:57 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.2ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 127.0.0.1 at 2015-05-13 10:34:57 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 127.0.0.1 at 2015-05-13 10:34:57 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.1ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 127.0.0.1 at 2015-05-13 10:34:57 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 127.0.0.1 at 2015-05-13 10:34:57 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (0.2ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 127.0.0.1 at 2015-05-13 10:34:57 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 127.0.0.1 at 2015-05-13 10:34:57 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 127.0.0.1 at 2015-05-13 10:34:57 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (0.4ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 127.0.0.1 at 2015-05-13 10:34:57 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (0.2ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 127.0.0.1 at 2015-05-13 10:34:57 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (0.2ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/home.js" for 127.0.0.1 at 2015-05-13 10:34:57 +0000
+Processing by StaticPagesController#homejs as JS
+  Rendered static_pages/home.js.erb (1.3ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-13 12:31:24 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/_navbar.html.erb (0.2ms)
+  Rendered static_pages/_footer.html.erb (1.4ms)
+  Rendered static_pages/home.html.erb (4.4ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 127.0.0.1 at 2015-05-13 12:31:24 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.3ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 127.0.0.1 at 2015-05-13 12:31:24 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 127.0.0.1 at 2015-05-13 12:31:24 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.2ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 127.0.0.1 at 2015-05-13 12:31:24 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 127.0.0.1 at 2015-05-13 12:31:24 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 127.0.0.1 at 2015-05-13 12:31:24 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (0.2ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 127.0.0.1 at 2015-05-13 12:31:24 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 127.0.0.1 at 2015-05-13 12:31:24 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (0.4ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 127.0.0.1 at 2015-05-13 12:31:24 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (0.2ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 127.0.0.1 at 2015-05-13 12:31:24 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (0.2ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/home.js" for 127.0.0.1 at 2015-05-13 12:31:24 +0000
+Processing by StaticPagesController#homejs as JS
+  Rendered static_pages/home.js.erb (1.5ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-13 12:33:03 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/home.html.erb (2.8ms)
+Completed 200 OK in 11ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 127.0.0.1 at 2015-05-13 12:33:03 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.2ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 127.0.0.1 at 2015-05-13 12:33:03 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.1ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 127.0.0.1 at 2015-05-13 12:33:03 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.2ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 127.0.0.1 at 2015-05-13 12:33:03 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.2ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 127.0.0.1 at 2015-05-13 12:33:03 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (0.1ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 127.0.0.1 at 2015-05-13 12:33:03 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (0.2ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 127.0.0.1 at 2015-05-13 12:33:03 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 127.0.0.1 at 2015-05-13 12:33:03 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (0.2ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 127.0.0.1 at 2015-05-13 12:33:03 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 127.0.0.1 at 2015-05-13 12:33:03 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (0.2ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/home.js" for 127.0.0.1 at 2015-05-13 12:33:03 +0000
+Processing by StaticPagesController#homejs as JS
+  Rendered static_pages/home.js.erb (1.6ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-13 12:34:47 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/home.html.erb (3.0ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 127.0.0.1 at 2015-05-13 12:34:47 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.5ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 127.0.0.1 at 2015-05-13 12:34:47 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 127.0.0.1 at 2015-05-13 12:34:47 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.2ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 127.0.0.1 at 2015-05-13 12:34:47 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 127.0.0.1 at 2015-05-13 12:34:47 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 127.0.0.1 at 2015-05-13 12:34:47 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 127.0.0.1 at 2015-05-13 12:34:47 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (0.1ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 127.0.0.1 at 2015-05-13 12:34:47 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (0.2ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 127.0.0.1 at 2015-05-13 12:34:47 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (0.2ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 127.0.0.1 at 2015-05-13 12:34:47 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (0.2ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/home.js" for 127.0.0.1 at 2015-05-13 12:34:47 +0000
+Processing by StaticPagesController#homejs as JS
+  Rendered static_pages/home.js.erb (1.7ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-13 12:35:17 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/home.html.erb (2.7ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 127.0.0.1 at 2015-05-13 12:35:17 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.2ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 127.0.0.1 at 2015-05-13 12:35:17 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 127.0.0.1 at 2015-05-13 12:35:17 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.2ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 127.0.0.1 at 2015-05-13 12:35:17 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.2ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 127.0.0.1 at 2015-05-13 12:35:17 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 127.0.0.1 at 2015-05-13 12:35:17 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (0.2ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 127.0.0.1 at 2015-05-13 12:35:17 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (0.1ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 127.0.0.1 at 2015-05-13 12:35:17 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (0.3ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 127.0.0.1 at 2015-05-13 12:35:17 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (0.2ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 127.0.0.1 at 2015-05-13 12:35:17 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (0.2ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/home.js" for 127.0.0.1 at 2015-05-13 12:35:17 +0000
+Processing by StaticPagesController#homejs as JS
+  Rendered static_pages/home.js.erb (1.4ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-13 12:35:50 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/home.html.erb (2.7ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 127.0.0.1 at 2015-05-13 12:35:50 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 127.0.0.1 at 2015-05-13 12:35:50 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 127.0.0.1 at 2015-05-13 12:35:50 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.2ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 127.0.0.1 at 2015-05-13 12:35:50 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 127.0.0.1 at 2015-05-13 12:35:50 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 127.0.0.1 at 2015-05-13 12:35:50 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (0.2ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 127.0.0.1 at 2015-05-13 12:35:50 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (0.1ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 127.0.0.1 at 2015-05-13 12:35:50 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (0.2ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 127.0.0.1 at 2015-05-13 12:35:50 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (0.2ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 127.0.0.1 at 2015-05-13 12:35:50 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (0.2ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/home.js" for 127.0.0.1 at 2015-05-13 12:35:50 +0000
+Processing by StaticPagesController#homejs as JS
+  Rendered static_pages/home.js.erb (1.4ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-13 12:36:34 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/home.html.erb (2.4ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 127.0.0.1 at 2015-05-13 12:36:34 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.2ms)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 127.0.0.1 at 2015-05-13 12:36:34 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 127.0.0.1 at 2015-05-13 12:36:34 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 127.0.0.1 at 2015-05-13 12:36:34 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 127.0.0.1 at 2015-05-13 12:36:34 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 127.0.0.1 at 2015-05-13 12:36:34 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (0.1ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 127.0.0.1 at 2015-05-13 12:36:34 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (0.1ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 127.0.0.1 at 2015-05-13 12:36:34 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (0.2ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 127.0.0.1 at 2015-05-13 12:36:34 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (0.2ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 127.0.0.1 at 2015-05-13 12:36:34 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (0.2ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/home.js" for 127.0.0.1 at 2015-05-13 12:36:34 +0000
+Processing by StaticPagesController#homejs as JS
+  Rendered static_pages/home.js.erb (1.5ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tempmaxmin.html" for 127.0.0.1 at 2015-05-13 12:37:58 +0000
+Processing by StaticPagesController#tempmaxmin as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/tempmaxmin.html.erb (2.9ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 127.0.0.1 at 2015-05-13 12:37:58 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.2ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 127.0.0.1 at 2015-05-13 12:37:58 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 127.0.0.1 at 2015-05-13 12:37:58 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.2ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 127.0.0.1 at 2015-05-13 12:37:58 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.2ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 127.0.0.1 at 2015-05-13 12:37:58 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 127.0.0.1 at 2015-05-13 12:37:58 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (0.2ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 127.0.0.1 at 2015-05-13 12:37:58 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (0.1ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 127.0.0.1 at 2015-05-13 12:37:58 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (0.2ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 127.0.0.1 at 2015-05-13 12:37:58 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 127.0.0.1 at 2015-05-13 12:37:58 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/tempmaxmin.js" for 127.0.0.1 at 2015-05-13 12:37:58 +0000
+Processing by StaticPagesController#tempmaxminjs as */*
+  Rendered static_pages/tempmaxmin.js.erb (1.0ms)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tempmaxmin.html" for 127.0.0.1 at 2015-05-13 12:42:31 +0000
+Processing by StaticPagesController#tempmaxmin as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.2ms)
+  Rendered static_pages/tempmaxmin.html.erb (2.9ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 127.0.0.1 at 2015-05-13 12:42:31 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.2ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 127.0.0.1 at 2015-05-13 12:42:31 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 127.0.0.1 at 2015-05-13 12:42:31 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 127.0.0.1 at 2015-05-13 12:42:31 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 127.0.0.1 at 2015-05-13 12:42:31 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (0.2ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 127.0.0.1 at 2015-05-13 12:42:31 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 127.0.0.1 at 2015-05-13 12:42:31 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 127.0.0.1 at 2015-05-13 12:42:31 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (0.3ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 127.0.0.1 at 2015-05-13 12:42:31 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 127.0.0.1 at 2015-05-13 12:42:31 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/tempmaxmin.js" for 127.0.0.1 at 2015-05-13 12:42:31 +0000
+Processing by StaticPagesController#tempmaxminjs as */*
+  Rendered static_pages/tempmaxmin.js.erb (1.1ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tempmaxmin.html" for 127.0.0.1 at 2015-05-13 12:44:20 +0000
+Processing by StaticPagesController#tempmaxmin as HTML
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/tempmaxmin.html.erb (2.7ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 127.0.0.1 at 2015-05-13 12:44:20 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 127.0.0.1 at 2015-05-13 12:44:20 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 127.0.0.1 at 2015-05-13 12:44:20 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.2ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 127.0.0.1 at 2015-05-13 12:44:20 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxcore.js" for 127.0.0.1 at 2015-05-13 12:44:20 +0000
+Processing by StaticPagesController#jqxcorejs as JS
+  Rendered jqwidgets/jqxcore.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxdata.js" for 127.0.0.1 at 2015-05-13 12:44:20 +0000
+Processing by StaticPagesController#jqxdatajs as JS
+  Rendered jqwidgets/jqxdata.js (0.2ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxexpander.js" for 127.0.0.1 at 2015-05-13 12:44:20 +0000
+Processing by StaticPagesController#jqxexpanderjs as JS
+  Rendered jqwidgets/jqxexpander.js (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxchart.js" for 127.0.0.1 at 2015-05-13 12:44:20 +0000
+Processing by StaticPagesController#jqxchartjs as JS
+  Rendered jqwidgets/jqxchart.js (0.3ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxgauge.js" for 127.0.0.1 at 2015-05-13 12:44:20 +0000
+Processing by StaticPagesController#jqxgaugejs as JS
+  Rendered jqwidgets/jqxgauge.js (0.2ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jqwidgets/jqxtabs.js" for 127.0.0.1 at 2015-05-13 12:44:20 +0000
+Processing by StaticPagesController#jqxtabsjs as JS
+  Rendered jqwidgets/jqxtabs.js (0.2ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/tempmaxmin.js" for 127.0.0.1 at 2015-05-13 12:44:20 +0000
+Processing by StaticPagesController#tempmaxminjs as */*
+  Rendered static_pages/tempmaxmin.js.erb (1.0ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calendar.html" for 127.0.0.1 at 2015-05-13 14:24:20 +0000
+Processing by StaticPagesController#calendar as HTML
+  Rendered static_pages/_navbar.html.erb (0.2ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/calendar.html (3.5ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 127.0.0.1 at 2015-05-13 14:24:20 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 127.0.0.1 at 2015-05-13 14:24:20 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 127.0.0.1 at 2015-05-13 14:24:20 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 127.0.0.1 at 2015-05-13 14:24:20 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap-waitingfor.js" for 127.0.0.1 at 2015-05-13 14:24:21 +0000
+Processing by StaticPagesController#bootstrapwaitingforjs as */*
+  Rendered js/bootstrap-waitingfor.js.erb (1.0ms)
+Completed 200 OK in 63ms (Views: 62.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/calendar.js" for 127.0.0.1 at 2015-05-13 14:24:21 +0000
+Processing by StaticPagesController#calendarjs as */*
+  Rendered static_pages/calendar.js.erb (1.4ms)
+Completed 200 OK in 45ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rainfall.html?days=3&datelength=7&timeunit=3" for 127.0.0.1 at 2015-05-13 14:25:27 +0000
+Processing by StaticPagesController#rainfall as HTML
+  Parameters: {"days"=>"3", "datelength"=>"7", "timeunit"=>"3"}
+  Rendered static_pages/_navbar.html.erb (0.1ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/rainfall.html.erb (4.6ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 127.0.0.1 at 2015-05-13 14:25:27 +0000
+Processing by StaticPagesController#bootcss as HTML
+  Rendered css/bootstrap.min.css.erb (0.2ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap.min.js" for 127.0.0.1 at 2015-05-13 14:25:27 +0000
+Processing by StaticPagesController#boot as */*
+  Rendered js/bootstrap.min.js.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/custom.css" for 127.0.0.1 at 2015-05-13 14:25:27 +0000
+Processing by StaticPagesController#customcss as HTML
+  Rendered css/custom.css.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/gettheme.js" for 127.0.0.1 at 2015-05-13 14:25:28 +0000
+Processing by StaticPagesController#getthemejs as JS
+  Rendered scripts/gettheme.js.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/bootstrap-waitingfor.js" for 127.0.0.1 at 2015-05-13 14:25:28 +0000
+Processing by StaticPagesController#bootstrapwaitingforjs as */*
+  Rendered js/bootstrap-waitingfor.js.erb (0.2ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/rainfall.js?days=3&datelength=7&timeunit=3" for 127.0.0.1 at 2015-05-13 14:25:28 +0000
+Processing by StaticPagesController#rainfalljs as */*
+  Parameters: {"days"=>"3", "datelength"=>"7", "timeunit"=>"3"}
+  Rendered static_pages/rainfall.js.erb (1.4ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms)

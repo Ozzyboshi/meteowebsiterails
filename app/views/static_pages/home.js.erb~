@@ -104,7 +104,7 @@ function updateMeteo(sales) {
 	else if (temphumidex.toFixed(2)>=40 && temphumidex.toFixed(2)<46)
 		humidexwarning="Sensazione di malessere generalizzato. Pericolo. Evitare gli sforzi. ";
 	else if (temphumidex.toFixed(2)>=46 && temphumidex.toFixed(2)<54)
-		humidexwarning="Grave pericolo. Sospendere le attività fisiche. ";
+		humidexwarning="Grave pericolo. Sospendere le attivit&agrave; fisiche. ";
 	else if (temphumidex.toFixed(2)>=54)
 		humidexwarning="Colpo di calore imminente (pericolo di morte)";
 	$("#humidexdesc").text(temphumidex.toFixed(2)+" °"+" - "+humidexwarning);
