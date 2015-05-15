@@ -23,6 +23,7 @@ Rails.application.routes.draw do
   get '/js/last48hrpr.js'  => 'static_pages#last48hrprjs'
   get '/js/calendar.js'  => 'static_pages#calendarjs'
   get '/js/rainfall.js'  => 'static_pages#rainfalljs'
+  get '/js/rainyday.js'  => 'static_pages#rainydayjs'
   get 'jqwidgets/jqxtabs' => 'static_pages#jqxtabsjs'
   get 'jqwidgets/jqxgauge' => 'static_pages#jqxgaugejs'
   get 'jqwidgets/jqxchart' => 'static_pages#jqxchartjs'

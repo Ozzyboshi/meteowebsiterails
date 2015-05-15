@@ -1,5 +1,10 @@
-$(document).ready(function () {
+//var imageURL='http://i.imgur.com/VuX2Nf0.jpg';
+//var imageURL='http://i.imgur.com/U1Tqqdw.jpg';
+var imageURL='http://i.imgur.com/mzS5Fe6.jpg?1';
+//var imageURL='http://i.imgur.com/OVQkDRE.jpg';
+var intensitaPioggia=0;
 
+$(document).ready(function () {
 	// Inizio funzione per swatch beat time
 	Date.prototype.getSwatch = function() {
 		var swatch = ((this.getUTCHours() + 1)%24) + this.getUTCMinutes()/60 + this.getUTCSeconds()/3600;
@@ -42,8 +47,44 @@ $(document).ready(function () {
     overlayClass          :   'animsition-overlay-slide',
     overlayParentElement  :   'body'
   });
-
 });
+
+function resizeBackground()
+{
+	if (intensitaPioggia==-1) return ;
+	containerheight=parseInt($("#container").css("height"));
+	
+	navbarheight=parseInt($("#navbar").css("height"));
+	var totheight=eval(containerheight)+eval(navbarheight*3)+eval(0)+"px";
+	
+	$("#background").css("height",totheight);
+	
+	var image = document.getElementById('background');
+	image.onload = function() {
+		var engine = new RainyDay({
+			image: this,
+			blur: 20
+		});
+		if (intensitaPioggia==0)
+		{
+			engine.rain([ [0, 0, 0] ]);
+		}
+		else
+		{
+			engine.rain([ [1, 2, 8000] ]);
+			engine.rain([ [3, 3, 0.88], [5, 5, 0.9], [6, 2, 1] ], 100);
+		}
+
+	},document.getElementById('canvas');
+	image.crossOrigin = 'anonymous';
+	image.src = imageURL;
+}
+
+$( window ).resize(function() {
+	resizeBackground();
+});
+
+
 
 function convert_to_F(celsius)
 {
@@ -91,6 +132,8 @@ function updateMeteo(sales) {
 	$("#gaugevento").jqxGauge('setValue', 90+(22.5*sales[0].vento_direzione));
 	$('#termometropioggia').jqxLinearGauge('value',sales[0].day_data[0].pioggia*1);
 	$("#pioggiamezzanotte").text(sales[0].day_data[0].pioggia*1+" mm");
+	if (sales[0].day_data[0].pioggia*1>0)
+		intensitaPioggia=1;
 
 	var e = 6.112*Math.pow(10,(7.5*(sales[0].temperatura_esterna*1)/(237.7+(sales[0].temperatura_esterna*1))))*(sales[0].umidita_esterna*1)/100
 	var temphumidex=(sales[0].temperatura_esterna*1) + 0.5555 * (e - 10);
@@ -112,6 +155,7 @@ function updateMeteo(sales) {
 	$('#humidex').jqxLinearGauge('animationDuration', 1000);
 	$('#humidex').jqxLinearGauge('value',temphumidex*1);
 	
+	resizeBackground();
 }
 
 function print_termometro(divobjectselector)

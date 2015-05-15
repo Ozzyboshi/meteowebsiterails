@@ -67,6 +67,9 @@ class StaticPagesController < ApplicationController
 	def rainfalljs
 		render 'rainfall.js.erb' 
 	end
+	def rainydayjs
+		render 'rainyday.js.erb' 
+	end
 	
 	def jqxtabsjs
 		respond_to do |format|
