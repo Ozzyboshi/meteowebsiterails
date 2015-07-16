@@ -10,9 +10,10 @@ $(document).ready(function () {
 		var swatch = ((this.getUTCHours() + 1)%24) + this.getUTCMinutes()/60 + this.getUTCSeconds()/3600;
 		return Math.floor(swatch*1000/24);
 	}
+	var ws_url="http://"+"<%= ws_host() %>"+":"+"<%= ws_port() %>"+"/WeatherStation/MeteoServices/Readings/lastReading/updateMeteo";
 
-	handleRefresh("http://meteo.ozzyboshi.com:8888/WeatherStation/MeteoServices/Readings/lastReading/updateMeteo");
-	setInterval(function () {handleRefresh("http://meteo.ozzyboshi.com:8888/WeatherStation/MeteoServices/Readings/lastReading/updateMeteo")}, 30000);
+	handleRefresh(ws_url);
+	setInterval(function () {handleRefresh(ws_url)}, 30000);
 	
 	print_termometro($('#termometroesterno'));
 	print_termometro($('#termometrointerno'));

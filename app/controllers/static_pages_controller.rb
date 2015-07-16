@@ -1,5 +1,7 @@
 class StaticPagesController < ApplicationController
 	
+	helper ApplicationHelper
+
 	def home
 		render :home,:layout => false
 	end
