@@ -1,3 +1,4 @@
+var ws_host_and_port="http://"+"<%= ws_host() %>"+":"+"<%= ws_port() %>";
 $( document ).ready(
 	function () {
 		$( "#datepicker" ).datepicker();
@@ -18,8 +19,8 @@ $( document ).ready(
 			overlayClass			:	'animsition-overlay-slide',
 			overlayParentElement  :   'body'
 		});
-		handleRefresh("http://meteo.ozzyboshi.com:8888/WeatherStation/MeteoServices/Readings/readingsByDay/updateMeteoReadings?date="+getQueryDate()+"&filtro=318","jsonp1");
-		handleRefresh("http://meteo.ozzyboshi.com:8888/WeatherStation/MeteoServices/Readings/LastRainfallsAndAvgTemp/updateMeteoRainfalls?days=10&datelength=13&timeunit=2&period="+getQueryDate(),"jsonp2");
+		handleRefresh(ws_host_and_port+"/WeatherStation/MeteoServices/Readings/readingsByDay/updateMeteoReadings?date="+getQueryDate()+"&filtro=318","jsonp1");
+		handleRefresh(ws_host_and_port+"/WeatherStation/MeteoServices/Readings/LastRainfallsAndAvgTemp/updateMeteoRainfalls?days=10&datelength=13&timeunit=2&period="+getQueryDate(),"jsonp2");
 		
 		var theme = getDemoTheme(),
 			majorTicks = { size: '15%', interval: 10 },
@@ -281,8 +282,8 @@ $( document ).ready(
 $( "#datepicker" ).change(
 	function () {
 		waitingDialog.show();
-		handleRefresh("http://meteo.ozzyboshi.com:8888/WeatherStation/MeteoServices/Readings/readingsByDay/updateMeteoReadings?date="+getQueryDate()+"&filtro=318","jsonp1");
-		handleRefresh("http://meteo.ozzyboshi.com:8888/WeatherStation/MeteoServices/Readings/LastRainfallsAndAvgTemp/updateMeteoRainfalls?days=10&datelength=13&timeunit=2&period="+getQueryDate(),"jsonp2");
+		handleRefresh(ws_host_and_port+"/WeatherStation/MeteoServices/Readings/readingsByDay/updateMeteoReadings?date="+getQueryDate()+"&filtro=318","jsonp1");
+		handleRefresh(ws_host_and_port+"/WeatherStation/MeteoServices/Readings/LastRainfallsAndAvgTemp/updateMeteoRainfalls?days=10&datelength=13&timeunit=2&period="+getQueryDate(),"jsonp2");
 	}
 );
 
