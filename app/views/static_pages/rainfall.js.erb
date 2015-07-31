@@ -85,7 +85,8 @@ $( document ).ready(
 
 function handleRefresh1()
 {
-	var url ="http://meteo.ozzyboshi.com:8888/WeatherStation/MeteoServices/Readings/LastRainfallsAndAvgTemp/updateMeteo?days=<%= params[:days] %>&datelength=<%= params[:datelength] %>&timeunit=<%= params[:timeunit] %>";
+	var ws_host_and_port="http://"+"<%= ws_host() %>"+":"+"<%= ws_port() %>";
+	var url=ws_host_and_port+"/WeatherStation/MeteoServices/Readings/LastRainfallsAndAvgTemp/updateMeteo?days=<%= params[:days] %>&datelength=<%= params[:datelength] %>&timeunit=<%= params[:timeunit] %>";
 	var newScriptElement = document.createElement("script");
 	newScriptElement.setAttribute("src",url);
 	newScriptElement.setAttribute("id","jsonp");
@@ -120,5 +121,3 @@ function updateMeteo(letture)
 	precipitazionichart.series[0].setData(array2.reverse(),true);
 	precipitazionichart.series[1].setData(array3.reverse(),true);
 }
-
-

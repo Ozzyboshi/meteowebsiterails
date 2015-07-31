@@ -9,8 +9,8 @@ $(document).ready(function () {
 	print_termometro($('#termometromax'));
 	print_termometro($('#termometromin'));
 
-	var urlmax="http://meteo.ozzyboshi.com:8888/WeatherStation/MeteoServices/Readings/lastMaxReading/updateMeteoMax"
-	var urlmin="http://meteo.ozzyboshi.com:8888/WeatherStation/MeteoServices/Readings/lastMinReading/updateMeteoMin"
+	var urlmax="http://"+"<%= ws_host() %>"+":"+"<%= ws_port() %>"+"/WeatherStation/MeteoServices/Readings/lastMaxReading/updateMeteoMax";
+	var urlmin="http://"+"<%= ws_host() %>"+":"+"<%= ws_port() %>"+"/WeatherStation/MeteoServices/Readings/lastMinReading/updateMeteoMin";
 	
 	handleRefresh(urlmax,"jsonpmax");
 	setInterval(function () {handleRefresh(urlmax)}, 30000);
@@ -25,7 +25,6 @@ $(document).ready(function () {
     inDuration            :    1500,
     outDuration           :    800,
     linkElement           :   '.animsition-link',
-    // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
     loading               :    true,
     loadingParentElement  :   'body', //animsition wrapper element
     loadingClass          :   'animsition-loading',
@@ -33,11 +32,7 @@ $(document).ready(function () {
                               '-webkit-animation-duration',
                               '-o-animation-duration'
                             ],
-    //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-    //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-    
     overlay               :   false,
-    
     overlayClass          :   'animsition-overlay-slide',
     overlayParentElement  :   'body'
   });
