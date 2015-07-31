@@ -1,6 +1,7 @@
 function handleRefresh1()
 {
-	var url ="http://meteo.ozzyboshi.com:8888/WeatherStation/MeteoServices/Readings/last72HReadings/updateMeteoReadings?filtro=306";
+	var ws_host_and_port="http://"+"<%= ws_host() %>"+":"+"<%= ws_port() %>";
+	var url=ws_host_and_port+"/WeatherStation/MeteoServices/Readings/last72HReadings/updateMeteoReadings?filtro=306";
 	var newScriptElement = document.createElement("script");
 	newScriptElement.setAttribute("src",url);
 	newScriptElement.setAttribute("id","jsonp");
