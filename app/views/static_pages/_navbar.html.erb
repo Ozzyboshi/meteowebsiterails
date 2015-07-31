@@ -24,15 +24,10 @@
 						<% if locals[:page] == "last24hr.html" %> <li class="active dropdown"> <% else %> <li class="dropdown"> <% end %>
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dati centralina <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li class="dropdown-header">Ultime 24 Hr</li>
-								<li><a href="last24hr.html">Temperatura</a></li>
-								<li><a href="last24hrumi.html">Umidit&agrave;</a></li>
-								<li><a href="last24hrpr.html">Pressione</a></li>
-								<li class="divider"></li>
-								<li class="dropdown-header">Ultime 48 ore</li>
-								<li><a href="last48hr.html">Temperatura</a></li>
-								<li><a href="last48hrumi.html">Umidit&agrave;</a></li>
-								<li><a href="last48hrpr.html">Pressione</a></li>
+								<li class="dropdown-header">Ultime ore</li>
+								<li><a href="last24hr.html">Ultime 24 ore</a></li>
+								<li><a href="last48hr.html">Ultime 48 ore</a></li>
+								<li><a href="last72hr.html">Ultime 72 ore</a></li>
 								<li class="divider"></li>
 								<li class="dropdown-header">Precipitazioni vs Temperature medie</li>
 								<li><a href="rainfall.html?days=10&datelength=10">Ultimi 10 giorni</a></li>

@@ -10,6 +10,7 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/custom.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.4.3/css/animsition.min.css">
+		<style>.row {margin-bottom:50px}</style>
 	</head>
 	<body>
 		<%= render 'navbar', :locals => {:page => 'last48hr.html'} %>
@@ -18,6 +19,18 @@
 				<!-- Inizio temperatura 48hr -->
 				<div class="col-sm-12">
 					<div id="gauge" ></div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- Inizio temperatura 48hr -->
+				<div class="col-sm-12">
+					<div id="gaugepr" ></div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- Inizio temperatura 48hr -->
+				<div class="col-sm-12">
+					<div id="gaugeumi" ></div>
 					<br>
 					<input type=button id=refresh value="Aggiorna grafico">
 				</div>

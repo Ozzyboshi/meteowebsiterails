@@ -10,14 +10,27 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/custom.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.4.3/css/animsition.min.css">
+		<style>.row {margin-bottom:50px}</style>
 	</head>
 	<body>
-		<%= render 'navbar', :locals => {:page => 'last24hr.html'} %>
+		<%= render 'navbar', :locals => {:page => 'last72hr.html'} %>
 		<div class="container animsition">
 			<div class="row">
-				<!-- Inizio pressione 48hr -->
+				<!-- Inizio temperatura 72hr -->
 				<div class="col-sm-12">
 					<div id="gauge" ></div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- Inizio temperatura 72hr -->
+				<div class="col-sm-12">
+					<div id="gaugepr" ></div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- Inizio temperatura 72hr -->
+				<div class="col-sm-12">
+					<div id="gaugeumi" ></div>
 					<br>
 					<input type=button id=refresh value="Aggiorna grafico">
 				</div>
@@ -41,6 +54,6 @@
 		<script src="http://code.highcharts.com/highcharts.js"></script>
 		<script src="http://code.highcharts.com/highcharts-more.js"></script>
 		<script src="http://code.highcharts.com/modules/exporting.js"></script>
-		<script src="./js/last48hrpr.js"></script>
+		<script src="./js/last72hr.js"></script>
 	</body>
 </html>

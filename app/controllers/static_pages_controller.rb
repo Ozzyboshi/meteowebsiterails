@@ -17,19 +17,6 @@ class StaticPagesController < ApplicationController
 	def last48hr
 		render :last48hr,:layout => false
 	end
-	
-	def last24hrumi
-		render :last24hrumi,:layout => false
-	end
-	def last48hrumi
-		render :last48hrumi,:layout => false
-	end
-	def last24hrpr
-		render :last24hrpr,:layout => false
-	end
-	def last48hrpr
-		render :last48hrpr,:layout => false
-	end
 	def calendar
 		render :calendar,:layout => false
 	end
@@ -51,18 +38,10 @@ class StaticPagesController < ApplicationController
 	def last48hrjs
 		render 'last48hr.js.erb' 
 	end
-	def last24hrumijs
-		render 'last24hrumi.js.erb' 
+	def last72hrjs
+		render 'last72hr.js.erb' 
 	end
-	def last48hrumijs
-		render 'last48hrumi.js.erb' 
-	end
-	def last24hrprjs
-		render 'last24hrpr.js.erb' 
-	end
-	def last48hrprjs
-		render 'last48hrpr.js.erb' 
-	end
+	
 	def calendarjs
 		render 'calendar.js.erb' 
 	end

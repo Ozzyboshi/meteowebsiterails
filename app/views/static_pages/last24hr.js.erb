@@ -1,6 +1,6 @@
 function handleRefresh1()
 {
-	var url ="http://meteo.ozzyboshi.com:8888/WeatherStation/MeteoServices/Readings/last24HReadings/updateMeteoReadings?filtro=34";
+	var url ="http://meteo.ozzyboshi.com:8888/WeatherStation/MeteoServices/Readings/last24HReadings/updateMeteoReadings?filtro=306";
 	var newScriptElement = document.createElement("script");
 	newScriptElement.setAttribute("src",url);
 	newScriptElement.setAttribute("id","jsonp");
@@ -16,22 +16,15 @@ function handleRefresh1()
 	}
 }
 
-/*function updateMeteo(sales) {
-
-}*/
 
 function updateMeteoReadings(sales) 
 {
-	//var array1 = new Array();
 	var array = new Array();
-	var arrayumidita = new Array();
-	var arrayvento = new Array();
-	var arraypressione = new Array();
+	var arraypr = new Array();
+	var arrayumi = new Array();
 
 	chart.series[0].setData([]);
-	//chartumidita.series[0].setData([]);
-	//chartvento.series[0].setData([]);
-	//chartpressione.series[0].setData([]);
+	chartpr.series[0].setData([]);
 
 	var date;
 	var newDate;
@@ -39,308 +32,250 @@ function updateMeteoReadings(sales)
 
 	for (var i=0;i<sales.length;i++)
 	{
-		/*var anno=sales[i].data.substring(0,4);
-		var mese=sales[i].data.substring(5,7);
-		var giorno=sales[i].data.substring(8,10);
-		var ora=sales[i].data.substring(11,13);
-		var minuti=sales[i].data.substring(14,16);*/
-		
-		
 		date = new Date(String(sales[i].data).replace(" ","T")+"Z");
-		array[i]=[date.getTime()+(date.getTimezoneOffset()*-1)*60*1000,eval(sales[i].temperatura_esterna)];
-			
-		//array[i]=[Date.UTC(anno,mese-1,giorno,ora,minuti),eval(sales[i].temperatura_esterna)];
-		//arrayumidita[i]=[Date.UTC(anno,mese-1,giorno,ora,minuti),eval(sales[i].umidita_esterna)];
-		//arrayvento[i]=[Date.UTC(anno,mese-1,giorno,ora,minuti),eval(sales[i].vento_medio)];
-		//arraypressione[i]=[Date.UTC(anno,mese-1,giorno,ora,minuti),eval(sales[i].pressione)];
+		array[i]=[date.getTime()+(date.getTimezoneOffset()*-1)*60*1000,eval(sales[i].temperatura_esterna)];		
+		arraypr[i]=[date.getTime()+(date.getTimezoneOffset()*-1)*60*1000,eval(sales[i].pressione)];
+		arrayumi[i]=[date.getTime()+(date.getTimezoneOffset()*-1)*60*1000,eval(sales[i].umidita_esterna)];
 	}
 	chart.series[0].setData(array,true);
-	//chartumidita.series[0].setData(arrayumidita,true);
-	//chartvento.series[0].setData(arrayvento,true);
-	//chartpressione.series[0].setData(arraypressione,true);
+	chartpr.series[0].setData(arraypr,true);
+	chartumi.series[0].setData(arrayumi,true);
 }
 
-	
-        $(document).ready(function () {
-        
-        $(".animsition").animsition({
+$(document).ready(function () {
+	$(".animsition").animsition(
+	{
   
-    inClass               :   'fade-in',
-    outClass              :   'fade-out',
-    inDuration            :    1500,
-    outDuration           :    800,
-    linkElement           :   '.animsition-link',
-    // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
-    loading               :    true,
-    loadingParentElement  :   'body', //animsition wrapper element
-    loadingClass          :   'animsition-loading',
-    unSupportCss          : [ 'animation-duration',
-                              '-webkit-animation-duration',
-                              '-o-animation-duration'
-                            ],
-    
-    overlay               :   false,
-    
-    overlayClass          :   'animsition-overlay-slide',
-    overlayParentElement  :   'body'
-  });
+	    inClass               :   'fade-in',
+	    outClass              :   'fade-out',
+	    inDuration            :    1500,
+	    outDuration           :    800,
+	    linkElement           :   '.animsition-link',
+	    loading               :    true,
+	    loadingParentElement  :   'body', 
+	    loadingClass          :   'animsition-loading',
+	    unSupportCss          : [ 'animation-duration',
+	                              '-webkit-animation-duration',
+	                              '-o-animation-duration'
+	                            ],
+	    
+	    overlay               :   false,
+	    
+	    overlayClass          :   'animsition-overlay-slide',
+	    overlayParentElement  :   'body'
+	});
         
-		//updateLinks();
-		handleRefresh1();
-		//setInterval(function () {handleRefresh1()}, 30000);
-
-		
-
-            var theme = getDemoTheme(),
+	handleRefresh1();
+	
+    var theme = getDemoTheme(),
                 majorTicks = { size: '15%', interval: 10 },
                 minorTicks = { size: '5%', interval: 2.5, style: { 'stroke-width': 1, stroke: '#aaaaaa'} },
                 labels = { interval: 10 };
+    
+	chart = new Highcharts.Chart(
+	{
+		chart: 
+		{
+			renderTo: 'gauge',
+			type: 'spline',
+			zoomType: 'x',
+			spacingRight: 20,
+		},
+		title:
+		{
+			text: 'Temperatura ultime 24 ore'
+		},
+		xAxis:
+		{
+			type: 'datetime',
+		},
+		yAxis: {
+			minPadding: 0.2,        
+			title:
+			{
+				text: 'Temperatura (c°)',    
+			}
+		},
+		tooltip: 
+		{
+			shared: true,
+			xDateFormat: '%d/%m/%Y %H:%M:%S' 
+		},
+		legend: 
+		{
+			enabled: false
+		},
+		plotOptions: 
+		{
+			area: 
+			{
+				fillColor: 
+				{
+					linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1},
+					stops: [[0, "#FF0000"],[1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(10).get('rgba')]]
+				},   
+				lineWidth: 1,
+				marker: 
+				{
+					enabled: false
+				},
+				shadow: false,
+				states: 
+				{
+					hover: 
+					{
+						lineWidth: 1
+					}
+				},   
+				threshold: null
+			}
+		},
+		series: [
+		{
+			type: 'area',
+			name: 'Temperatura in gradi centigradi',
+			pointInterval: 24 * 3600 * 1000,
+			data: [],
+		}]
+	});
 
-	    
-	    chart = new Highcharts.Chart({
-	     chart: {
-	        renderTo: 'gauge',
+	chartpr = new Highcharts.Chart(
+	{
+		chart: 
+	    {
+	    	renderTo: 'gaugepr',
 	        type: 'spline',
-		zoomType: 'x',
+			zoomType: 'x',
 	        spacingRight: 20,
-
-	     },
-	     title: {
-	        text: 'Temperatura ultime 24 ore'
-	     },
-	     xAxis: {
-	        type: 'datetime',
-
-	     },
-	     yAxis: {
-	        minPadding: 0.2,
-	            
-	            title: {
-	                text: 'Temperatura (c°)',
-	            
-	            }
-	     },
-	     tooltip: {
-	                shared: true,
-					xDateFormat: '%d/%m/%Y %H:%M:%S' 
-	            },
-	      legend: {
-	                enabled: false
-	            },
-	     plotOptions: {
-	                area: {   
-	                    fillColor: {
-	                        linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1},
-	                        stops: [
-	                            [0, "#FF0000"],
-	                            [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(10).get('rgba')]
-	                        ]
-	                    },   
-	                    lineWidth: 1,
-	                    marker: {
-	                        enabled: false
-	                    },
-	                    shadow: false,
-	                    states: {
-	                        hover: {
-	                            lineWidth: 1
-	                        }
-	                    },   
-	                    threshold: null
-	                }
-	            },
-	     series: [{
-		 type: 'area',
-		 name: 'Temperatura in gradi centigradi',
-		   pointInterval: 24 * 3600 * 1000,
-	        data: [],
-	     }]
-	  });
-
-	  chartumidita = new Highcharts.Chart({
-	     chart: {
-	        renderTo: 'gaugeumidita',
-	        type: 'spline',
-		zoomType: 'x',
-	        spacingRight: 20,
-
-	     },
-	     title: {
-	        text: 'Umidita ultime 24 ore'
-	     },
-	     xAxis: {
-	        type: 'datetime',
-
-	     },
-	     yAxis: {
-	        minPadding: 0.2,
-	            
-	            title: {
-	                text: 'Temperatura (c°)',
-	            
-	            }
-	     },
-	     tooltip: {
-	                shared: true,
-					xDateFormat: '%d/%m/%Y %H:%M:%S' 
-	            },
-	      legend: {
-	                enabled: false
-	            },
-	     plotOptions: {
-	                area: {   
-	                    fillColor: {
-	                        linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1},
-	                        stops: [
-	                            [0, "#FF0000"],
-	                            [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(10).get('rgba')]
-	                        ]
-	                    },   
-	                    lineWidth: 1,
-	                    marker: {
-	                        enabled: false
-	                    },
-	                    shadow: false,
-	                    states: {
-	                        hover: {
-	                            lineWidth: 1
-	                        }
-	                    },   
-	                    threshold: null
-	                }
-	            },
-	     series: [{
-		 type: 'area',
-		 name: 'Umidita in percentuale',
-		   pointInterval: 24 * 3600 * 1000,
-	        data: [],
-	     }]
-	  });
-
-	chartvento = new Highcharts.Chart({
-	     chart: {
-	        renderTo: 'gaugevento',
-	        type: 'spline',
-		zoomType: 'x',
-	        spacingRight: 20,
-
-	     },
-	     title: {
-	        text: 'Vento ultime 24 ore'
-	     },
-	     xAxis: {
-	        type: 'datetime',
-
-	     },
-	     yAxis: {
-	        minPadding: 0.2,
-	            
-	            title: {
-	                text: 'Vento (km/h)',
-	            
-	            }
-	     },
-	     tooltip: {
-	                shared: true,
-					xDateFormat: '%d/%m/%Y %H:%M:%S' 
-	            },
-	      legend: {
-	                enabled: false
-	            },
-	     plotOptions: {
-	                area: {   
-	                    fillColor: {
-	                        linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1},
-	                        stops: [
-	                            [0, "#FF0000"],
-	                            [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(10).get('rgba')]
-	                        ]
-	                    },   
-	                    lineWidth: 1,
-	                    marker: {
-	                        enabled: false
-	                    },
-	                    shadow: false,
-	                    states: {
-	                        hover: {
-	                            lineWidth: 1
-	                        }
-	                    },   
-	                    threshold: null
-	                }
-	            },
-	     series: [{
-		 type: 'area',
-		 name: 'Vento',
-		   pointInterval: 24 * 3600 * 1000,
-	        data: [],
-	     }]
-	  });
-
-	  chartpressione = new Highcharts.Chart({
-	     chart: {
-	        renderTo: 'gaugepressione',
-	        type: 'spline',
-		zoomType: 'x',
-	        spacingRight: 20,
-
-	     },
-	     title: {
+	    },
+	    title: 
+	    {
 	        text: 'Pressione ultime 24 ore'
-	     },
-	     xAxis: {
+	    },
+	    xAxis: 
+	    {
 	        type: 'datetime',
+	    },
+	    yAxis: 
+	    {
+	        minPadding: 0.2,    
+			title: 
+			{
+	        	text: 'Pressione (hPa)',
+	        }
+	    },
+	    tooltip: 
+	    {
+			shared: true,
+			xDateFormat: '%d/%m/%Y %H:%M:%S' 
+		},
+	    legend: 
+	    {
+	    	enabled: false
+		},
+	    plotOptions: 
+	    {
+			area: 
+			{
+				fillColor: 
+				{
+					linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1},
+					stops: [[0, "#FF0000"],[1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(10).get('rgba')]]
+				},   
+				lineWidth: 1,
+				marker: 
+				{
+					enabled: false
+				},
+				shadow: false,
+				states: 
+				{
+					hover: 
+					{
+						lineWidth: 1
+					}
+				},   
+				threshold: null
+			}
+		},
+	    series: 
+	    [
+	    {
+			type: 'area',
+			name: 'Pressione in hPa',
+			pointInterval: 24 * 3600 * 1000,
+		    data: [],
+		}
+		]
+	});
 
-	     },
-	     yAxis: {
-	        minPadding: 0.2,
-	            
-	            title: {
-	                text: 'Pressione (hPa)',
-	            
-	            }
-	     },
-	     tooltip: {
-	                shared: true,
-					xDateFormat: '%d/%m/%Y %H:%M:%S' 
-	            },
-	      legend: {
-	                enabled: false
-	            },
-	     plotOptions: {
-	                area: {   
-	                    fillColor: {
-	                        linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1},
-	                        stops: [
-	                            [0, "#FF0000"],
-	                            [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(10).get('rgba')]
-	                        ]
-	                    },   
-	                    lineWidth: 1,
-	                    marker: {
-	                        enabled: false
-	                    },
-	                    shadow: false,
-	                    states: {
-	                        hover: {
-	                            lineWidth: 1
-	                        }
-	                    },   
-	                    threshold: null
-	                }
-	            },
-	     series: [{
-		 type: 'area',
-		 name: 'Pressione in hPA',
-		   pointInterval: 24 * 3600 * 1000,
-	        data: [],
-	     }]
-	  });
-	  
-	 // handleRefresh1();
-	  //setInterval(handleRefresh1, 60000);
-
-        });
+	chartumi = new Highcharts.Chart(
+	{
+		chart: 
+		{
+	        renderTo: 'gaugeumi',
+	        type: 'spline',
+			zoomType: 'x',
+	        spacingRight: 20,
+		},
+		title: 
+		{
+			text: 'Umidità ultime 24 ore'
+		},
+		xAxis: 
+		{
+			type: 'datetime',
+		},
+		yAxis: 
+		{
+			minPadding: 0.2,
+			title: 
+			{
+				text: 'Umidita (%)',
+			}
+		},
+		tooltip: 
+		{
+			shared: true,
+			xDateFormat: '%d/%m/%Y %H:%M:%S' 
+		},
+		legend: 
+		{
+			enabled: false
+		},
+		plotOptions: 
+		{
+			area: 
+			{
+				fillColor: 
+				{
+					linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1},
+					stops: [[0, "#FF0000"],[1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(10).get('rgba')]]
+				},   
+				lineWidth: 1,
+				marker: 
+				{
+					enabled: false
+				},
+				shadow: false,
+				states: 
+				{
+					hover: 
+					{
+						lineWidth: 1
+					}
+				},   
+				threshold: null
+			}
+		},
+		series: [{
+			type: 'area',
+			name: 'Umidita in percentuale',
+			pointInterval: 24 * 3600 * 1000,
+			data: [],
+		}]
+	});
+});
 $("#refresh").click(
 	function ()
 	{
