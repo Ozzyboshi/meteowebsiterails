@@ -17,9 +17,15 @@ class StaticPagesController < ApplicationController
 	def last48hr
 		render :last48hr,:layout => false
 	end
+	
+	def last72hr
+		render :last72hr,:layout => false
+	end
+	
 	def calendar
 		render :calendar,:layout => false
 	end
+	
 	def rainfall
 		render :rainfall,:layout => false
 	end
