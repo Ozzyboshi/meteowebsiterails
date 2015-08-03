@@ -22,6 +22,10 @@ class StaticPagesController < ApplicationController
 		render :last72hr,:layout => false
 	end
 	
+	def last96hr
+		render :last96hr,:layout => false
+	end
+
 	def calendar
 		render :calendar,:layout => false
 	end
@@ -47,7 +51,9 @@ class StaticPagesController < ApplicationController
 	def last72hrjs
 		render 'last72hr.js.erb' 
 	end
-	
+	def last96hrjs
+		render 'last96hr.js.erb' 
+	end
 	def calendarjs
 		render 'calendar.js.erb' 
 	end
