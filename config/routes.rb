@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'static_pages#home'
+  get 'presentation' => 'static_pages#presentation'
   get 'tempmaxmin' => 'static_pages#tempmaxmin'
   get 'js/home' => 'static_pages#homejs'
   get 'last24hr' => 'static_pages#last24hr'
@@ -32,6 +33,8 @@ Rails.application.routes.draw do
   get 'js/bootstrap-waitingfor.js' => 'static_pages#bootstrapwaitingforjs'
   get 'css/bootstrap.min.css' => 'static_pages#bootcss'
   get 'css/custom.css' => 'static_pages#customcss'
+  get 'centralinameteoubertini.crx' => 'static_pages#centralinameteoubertini'
+  get 'images/background' => 'static_pages#background'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

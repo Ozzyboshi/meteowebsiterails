@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Centralina meteo ozzyboshi.com">
+		<meta name="author" content="Alessio Garzi">
+		<title>Centralina meteo Ozzyboshi</title>
+		
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/custom.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.4.3/css/animsition.min.css">
+		
+		<style>
+		  .jumbotron
+		  {
+
+		  	background-color : transparent;
+		  }
+		  body
+		  {
+		  	background-image: url("images/background.jpg");
+		  	background-repeat: no-repeat;
+		  	background-size: 100% 100%;
+		  }
+	      #map-canvas
+	      {
+	        width: 500px;
+	        height: 400px;
+	        margin: auto;
+	      }
+	      p
+	      {
+				font-family: 'Lobster Two', cursive;
+				color: black;
+				font-size: medium;
+		  }
+		  li
+	      {
+				font-family: 'Lobster Two', cursive;
+				color: black;
+				font-size: medium;
+		  }
+    	</style>
+    	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	    <script>
+	      function initialize() {
+	        var mapCanvas = document.getElementById('map-canvas');
+	        
+	        
+	        var mapOptions = {
+	          center: new google.maps.LatLng(43.470663, 11.853452),
+	          zoom: 18,
+	          mapTypeId: google.maps.MapTypeId.ROADMAP
+	        }
+
+	        var map = new google.maps.Map(mapCanvas, mapOptions)
+
+	        var marker = new google.maps.Marker({
+  				position: new google.maps.LatLng(43.470663, 11.853452),
+  				map: map,
+			});
+	      }
+	      google.maps.event.addDomListener(window, 'load', initialize);
+	    </script>
+	</head>
+	
+	<body>
+		<%= render 'navbar', :locals => {:page => 'presentation.html'} %>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="page-header">
+  					<h1>Presentazione</h1>
+				</div>
+				<div class="jumbotron">
+				  	<p>
+				  		Questo portale web pubblica le letture registrate da una centralina meteo PCE-FWS 20 installata in via degli Ubertini ad Arezzo.
+    					<br>Le letture sono estratte ogni minuto grazie ad un Raspberry Pi su cui è installato <a href="http://jim-easterbrook.github.io/pywws/doc/en/html/index.html">PYWWS</a>.<br>
+    					Di seguto elenco i repositories che compongono l'interfaccia di front e backend:
+	    				<ul>
+	    					<li><a href="https://github.com/Ozzyboshi/meteowebsiterails">Frontend del portale web in Rails</a></li>
+	    					<li><a href="https://github.com/Ozzyboshi/WeatherstationRubyWebsiteCompilerContainer">Generatore del Docker container utilizzato da Jenkins per effettuare il deploy del portale in Rails</a></li>
+	    					<li><a href="https://github.com/Ozzyboshi/WeatherstationJavaWS">Web service per interrogazione del database MYSQL di replica dove sono contenuti i dati relativi alle letture della centralina</a></li>
+	    					<li><a href="https://github.com/Ozzyboshi/WeatherstationJavaWSCompilerContainer">Generatore del Docker container utilizzato da Jenkins per effettuare il deploy dei web services</a></li>
+	    					<li><a href="https://github.com/Ozzyboshi/WeatherstationChromeExtension">Estensione per il browser Google Chrome</a><br>
+	    					E' possibile scaricare direttamente l'estensione per Google Chrome cliccando <a href="centralinameteoubertini.crx">qui</a>.Per installarla è sufficiente trascinare il file centralinameteoubertini.crx dentro la pagina delle estensioni di Chrome.</li>
+	    				</ul>
+    				</p>
+					<p>Si ringrazia <a href="http://www.arezzometeo.com">arezzometeo.com</a> per l'aiuto nella realizzazione di questo progetto.
+				</div>
+			</div>
+		</div>
+		<div  class="row">
+			<div class="col-sm-12">	
+				<div class="jumbotron">
+					<h3>Ubicazione della centralina meteo:</h3>
+					<div id="map-canvas"></div>
+				</div>
+			</div>
+		</div>
+		
+		<%= render "footer" %>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -2,6 +2,10 @@ class StaticPagesController < ApplicationController
 	
 	helper ApplicationHelper
 
+	def presentation
+		render :presentation,:layout=> false
+	end
+
 	def home
 		render :home,:layout => false
 	end
@@ -126,6 +130,14 @@ class StaticPagesController < ApplicationController
 		render 'css/custom.css.erb'
 	end 
 	
+	def centralinameteoubertini
+		send_file 'downloads/centralinameteoubertini.crx', :type=>"application/crx", :x_sendfile=>true
+	end
+
+	def background
+		send_file 'images/background.jpg', :type=>"application/jpeg", :x_sendfile=>false, :disposition => 'inline'
+	end
+
 	
 	
 end

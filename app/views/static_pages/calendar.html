@@ -10,7 +10,14 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/custom.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.4.3/css/animsition.min.css">
-		<style>.row {margin-bottom:50px}</style>
+		<style>.row {margin-bottom:50px}
+		body
+		  {
+		  	background-image: url("images/background.jpg");
+		  	background-repeat: no-repeat;
+		  	background-size: 100% 100%;
+		  }
+		</style>
 	</head>
 	<body>
 		<%= render 'navbar', :locals => {:page => 'calendar.html'} %>
