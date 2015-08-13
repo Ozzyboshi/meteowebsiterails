@@ -1,13 +1,17 @@
 $(document).ready(function () {
 
 	// Inizio funzione per swatch beat time
-	Date.prototype.getSwatch = function() {
+	Date.prototype.getSwatch = function() 
+	{
 		var swatch = ((this.getUTCHours() + 1)%24) + this.getUTCMinutes()/60 + this.getUTCSeconds()/3600;
 		return Math.floor(swatch*1000/24);
 	}
 
 	print_termometro($('#termometromax'));
 	print_termometro($('#termometromin'));
+
+	print_termometro($('#termometromaxint'));
+	print_termometro($('#termometrominint'));
 
 	var urlmax="http://"+"<%= ws_host() %>"+":"+"<%= ws_port() %>"+"/WeatherStation/MeteoServices/Readings/lastMaxReading/updateMeteoMax";
 	var urlmin="http://"+"<%= ws_host() %>"+":"+"<%= ws_port() %>"+"/WeatherStation/MeteoServices/Readings/lastMinReading/updateMeteoMin";
@@ -18,28 +22,31 @@ $(document).ready(function () {
 	handleRefresh(urlmin,"jsonpmin");
 	setInterval(function () {handleRefresh(urlmin)}, 30000);
 
-		$(".animsition").animsition({
+	$(".animsition").animsition(
+	{
   
-    inClass               :   'fade-in',
-    outClass              :   'fade-out',
-    inDuration            :    1500,
-    outDuration           :    800,
-    linkElement           :   '.animsition-link',
-    loading               :    true,
-    loadingParentElement  :   'body', //animsition wrapper element
-    loadingClass          :   'animsition-loading',
-    unSupportCss          : [ 'animation-duration',
-                              '-webkit-animation-duration',
-                              '-o-animation-duration'
-                            ],
-    overlay               :   false,
-    overlayClass          :   'animsition-overlay-slide',
-    overlayParentElement  :   'body'
-  });
+	    inClass               :   'fade-in',
+	    outClass              :   'fade-out',
+	    inDuration            :    1500,
+	    outDuration           :    800,
+	    linkElement           :   '.animsition-link',
+	    loading               :    true,
+	    loadingParentElement  :   'body',
+	    loadingClass          :   'animsition-loading',
+	    unSupportCss          : [ 'animation-duration',
+	                              '-webkit-animation-duration',
+	                              '-o-animation-duration'
+	                            ],
+	    overlay               :   false,
+	    overlayClass          :   'animsition-overlay-slide',
+	    overlayParentElement  :   'body'
+	}
+	);
 		
 });
 
-function handleRefresh(url,componentID) {
+function handleRefresh(url,componentID) 
+{
 	var newScriptElement = document.createElement("script");
 	newScriptElement.setAttribute("src",url);
 	newScriptElement.setAttribute("id",componentID);
@@ -56,21 +63,29 @@ function convert_to_F(celsius)
 {
 	return Math.round(celsius * 9 / 5 + 32);
 }
-function updateMeteoMax(sales) {
+
+function printTermData(selectorBase,data)
+{
 	var date = new Date(String(sales[0].data).replace(" ","T")+"Z");
-	
-	$("#termometromaxdesc").text(sales[0].temperatura_esterna*1+" ° ("+convert_to_F(sales[0].temperatura_esterna*1)+" °F) registrata alle "+date.toString());
-	$("#termometromaxdescswatch").text("Swatch internet beat time : @"+date.getSwatch()+" .beats");
-	$('#termometromax').jqxLinearGauge('animationDuration', 1000);
-	$('#termometromax').jqxLinearGauge('value',sales[0].temperatura_esterna*1);
+	var selectorDesc=selectorBase+"desc";
+	var selectorDescSwatch=selectorBase+"descswatch";
+
+	$(selectorDesc).text(data*1+" ° ("+convert_to_F(data*1)+" °F) registrata alle "+date.toString());
+	$(selectorDescSwatch).text("Swatch internet beat time : @"+date.getSwatch()+" .beats");
+	$(selectorBase).jqxLinearGauge('animationDuration', 1000);
+	$(selectorBase).jqxLinearGauge('value',data);
 }
 
-function updateMeteoMin(sales) {
-	var date = new Date(String(sales[0].data).replace(" ","T")+"Z");
-	$("#termometromindesc").text(sales[0].temperatura_esterna*1+" ° ("+convert_to_F(sales[0].temperatura_esterna*1)+" °F) registrata alle "+date.toString());
-	$("#termometromindescswatch").text("Swatch internet beat time : @"+date.getSwatch()+" .beats");
-	$('#termometromin').jqxLinearGauge('animationDuration', 1000);
-	$('#termometromin').jqxLinearGauge('value',sales[0].temperatura_esterna*1);
+function updateMeteoMax(sales) 
+{
+	printTermData("#termometromax",sales[0].temperatura_esterna*1);
+	printTermData("#termometromaxint",sales[0].temperatura_interna*1)
+}
+
+function updateMeteoMin(sales) 
+{
+	printTermData("#termometromin",sales[0].temperatura_esterna*1);
+	printTermData("#termometrominint",sales[0].temperatura_interna*1)
 }
 
 function print_termometro(divobjectselector)
@@ -95,4 +110,3 @@ function print_termometro(divobjectselector)
 	divobjectselector.jqxLinearGauge({width: 100 })
 	divobjectselector.jqxLinearGauge({min: -10 });
 }
-

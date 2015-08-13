@@ -34,9 +34,8 @@ $(document).ready(function () {
     inDuration            :    1500,
     outDuration           :    800,
     linkElement           :   '.animsition-link',
-    // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
     loading               :    true,
-    loadingParentElement  :   'body', //animsition wrapper element
+    loadingParentElement  :   'body',
     loadingClass          :   'animsition-loading',
     unSupportCss          : [ 'animation-duration',
                               '-webkit-animation-duration',
@@ -118,7 +117,6 @@ function updateMeteo(sales) {
 	$("#ventoraffica").text(sales[0].vento_raffica*1+" Km/h");
 	$("#pressione").text(sales[0].pressione*1+" hPa");
 	
-	
 	$('#termometroesterno').jqxLinearGauge('animationDuration', 1000);
 	$('#termometroesterno').jqxLinearGauge('value',sales[0].temperatura_esterna*1);
 	
@@ -147,7 +145,7 @@ function updateMeteo(sales) {
 	else if (temphumidex.toFixed(2)>=30 && temphumidex.toFixed(2)<35)
 		humidexwarning="Sensazione di malessere più o meno significativa. ";
 	else if (temphumidex.toFixed(2)>=35 && temphumidex.toFixed(2)<40)
-		humidexwarning="Sensazione di malessere abbastanza intensa. Prudenza. Limitare alcune attivit&agrave; fisiche gravose. ";
+		humidexwarning="Sensazione di malessere abbastanza intensa. Prudenza. Limitare alcune attività fisiche gravose. ";
 	else if (temphumidex.toFixed(2)>=40 && temphumidex.toFixed(2)<46)
 		humidexwarning="Sensazione di malessere generalizzato. Pericolo. Evitare gli sforzi. ";
 	else if (temphumidex.toFixed(2)>=46 && temphumidex.toFixed(2)<54)
@@ -298,4 +296,3 @@ function print_termometro_pioggia(divobjectselector)
 	divobjectselector.jqxLinearGauge({width: 100 })
 	divobjectselector.jqxLinearGauge({min: 0 });
 }
-

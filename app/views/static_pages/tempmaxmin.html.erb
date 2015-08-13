@@ -26,20 +26,45 @@
 		<br>
 		<div class="container animsition">
 			<div class="row">
-				<!-- Inizio temperatura massima -->
+				<!-- Inizio temperatura massima esterna -->
 				<div class="col-sm-6">
-					<h3>Temperatura massima</h3>
+					<h3>Temperatura massima esterna</h3>
 					<div id="termometromax" class=termometro></div><br>
-					<p class=termometro><h4><span id=termometromaxdesc></span><br><span id=termometromaxdescswatch ></span></h4>
+					<p class=termometro><h4><span id="termometromaxdesc"></span>
+						<br>
+						<span id="termometromaxdescswatch"></span></h4>
 				</div>
 				
-				<!-- Inizio temperatura minima -->
+				<!-- Inizio temperatura minima interna -->
 				<div class="col-sm-6">
-					<h3>Temperatura minima</h3>
+					<h3>Temperatura minima esterna</h3>
 					<div id="termometromin" class=termometro></div><br>
-					<p class=termometrodesc><h4> <span id=termometromindesc></span><br><span id=termometromindescswatch ></span></h4><
+					<p class=termometrodesc><h4> <span id="termometromindesc"></span>
+						<br>
+						<span id="termometromindescswatch"></span></h4>
 				</div>
 			</div>
+
+			<div class="row">
+				<!-- Inizio temperatura massima esterna -->
+				<div class="col-sm-6">
+					<h3>Temperatura massima interna</h3>
+					<div id="termometromaxint" class=termometro></div><br>
+					<p class=termometro><h4><span id="termometromaxintdesc"></span>
+						<br>
+						<span id="termometromaxintdescswatch"></span></h4>
+				</div>
+				
+				<!-- Inizio temperatura minima interna -->
+				<div class="col-sm-6">
+					<h3>Temperatura minima interna</h3>
+					<div id="termometrominint" class=termometro></div><br>
+					<p class=termometrodesc><h4> <span id="termometrominintdesc"></span>
+						<br>
+						<span id="termometrominintdescswatch"></span></h4>
+				</div>
+			</div>
+
 		</div>	
 		<br><br>
 		<%= render "footer" %>
