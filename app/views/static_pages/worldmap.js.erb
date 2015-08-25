@@ -1,0 +1,47 @@
+var precipitazionichart;
+
+$( document ).ready(
+	function () {
+		$(".animsition").animsition(
+		{
+			inClass			:	'fade-in',
+			outClass		:	'fade-out',
+			inDuration		:	1500,
+			outDuration		:	800,
+			linkElement		:	'.animsition-link',
+			loading			:	true,
+			loadingParentElement	:	'body', //animsition wrapper element
+			loadingClass			:	'animsition-loading',
+			unSupportCss			: [ 'animation-duration','-webkit-animation-duration','-o-animation-duration'],
+
+			overlay					:	false,
+			overlayClass			:	'animsition-overlay-slide',
+			overlayParentElement  :   'body'
+		});
+		
+		
+		handleRefresh1();
+	}
+);
+
+
+function handleRefresh1()
+{
+	var ws_host_and_port="http://"+"<%= ws_host() %>"+":"+"<%= ws_port() %>";
+	var url=ws_host_and_port+"/WeatherStation/MeteoServices/Readings/WorldImage";
+	
+	var canvas = document.getElementById('container');
+	var context = canvas.getContext('2d');
+	//waitingDialog.show('Loading...');
+	drawing = new Image();
+	drawing.onload = function () {
+		//$('#container').attr({width:400,height:300}).css({width:'800px',height:'600px'})‌
+		canvas.width  = drawing.width;
+		canvas.height = drawing.height;
+	    context.drawImage(drawing,0,0);
+	};
+	drawing.src = url;
+}
+
+
+

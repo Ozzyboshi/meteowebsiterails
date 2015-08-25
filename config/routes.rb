@@ -23,6 +23,7 @@ Rails.application.routes.draw do
   get '/js/calendar.js'  => 'static_pages#calendarjs'
   get '/js/rainfall.js'  => 'static_pages#rainfalljs'
   get '/js/rainyday.js'  => 'static_pages#rainydayjs'
+  get '/js/worldmap.js'  => 'static_pages#worldmapjs'
   get 'jqwidgets/jqxtabs' => 'static_pages#jqxtabsjs'
   get 'jqwidgets/jqxgauge' => 'static_pages#jqxgaugejs'
   get 'jqwidgets/jqxchart' => 'static_pages#jqxchartjs'
@@ -37,6 +38,7 @@ Rails.application.routes.draw do
   get 'css/custom.css' => 'static_pages#customcss'
   get 'centralinameteoubertini.crx' => 'static_pages#centralinameteoubertini'
   get 'images/background' => 'static_pages#background'
+  get 'worldmap' => 'static_pages#worldmap'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

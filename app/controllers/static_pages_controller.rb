@@ -41,6 +41,9 @@ class StaticPagesController < ApplicationController
 	def rainfall
 		render :rainfall,:layout => false
 	end
+	def worldmap
+		render :worldmap,:layout => false
+	end
 	
 	def homejs
 		respond_to do |format|
@@ -50,6 +53,7 @@ class StaticPagesController < ApplicationController
 	def tempmaxminjs
 		render 'tempmaxmin.js.erb' 
 	end
+
 	def last24hrjs
 		render 'last24hr.js.erb' 
 	end
@@ -73,6 +77,9 @@ class StaticPagesController < ApplicationController
 	end
 	def rainydayjs
 		render 'rainyday.js.erb' 
+	end
+	def worldmapjs
+		render 'worldmap.js.erb' 
 	end
 	
 	def jqxtabsjs

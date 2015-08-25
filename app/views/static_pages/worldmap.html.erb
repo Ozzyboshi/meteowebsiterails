@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Centralina meteo ozzyboshi.com">
+		<meta name="author" content="Alessio Garzi">
+		<title>Centralina meteo Ozzyboshi</title>
+		
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/custom.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.4.3/css/animsition.min.css">
+
+	</head>
+	<body>
+		<%= render 'navbar', :locals => {:page => 'worldmap.html'} %>
+		<div class="container animsition">
+			<div class="row">
+				<div class="col-sm-12">
+					<h3>Live Day/Night Worldmap</h3><br>
+					<canvas id="container" class="img-rounded"></div>
+				</div>
+			</div>
+		</div>	
+	
+		<%= render "footer" %>
+
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.4.3/js/jquery.animsition.min.js"></script>
+		<script src="./js/worldmap.js"></script>
+    </body>
+</html>

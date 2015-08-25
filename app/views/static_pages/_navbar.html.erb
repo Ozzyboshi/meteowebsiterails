@@ -45,8 +45,11 @@
 								<% (1..13).each do |i| %>
 								<li><a href="rainfall.html?days=<%= i+1 %>&datelength=7&timeunit=3">Ultimi <%= i+1 %> mesi</a></li>
 								<% end %>
+
 							</ul>
 						</li>
+						<% if locals[:page] == "worldmap.html" %> <li class="active"> <% else %> <li> <% end %>
+						<a href="worldmap.html">WorldMap</a></li>
 					</ul>
 				</div><!--/.nav-collapse -->
 			</div>
